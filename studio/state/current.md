@@ -16,11 +16,9 @@ Accepted proposal #3 revision 4 was added to main through
 [post-merge checks](https://github.com/michi-guns/bad-dream/actions/runs/39025700980)
 passed. The response guidance is now in main.
 
-Current focus: review [PR #6](https://github.com/michi-guns/bad-dream/pull/6),
-which prepares the requested plain-language communication guide. Its branch has
-been updated after #5; both the existing agent rules and communication links
-are retained. It still needs successful fresh checks/review and separate human
-merge authorisation. This guide has not been added to main yet.
+The plain-language communication guide from
+[PR #6](https://github.com/michi-guns/bad-dream/pull/6) is in main at `d5e2f79`.
+Current focus: proposal #7, below.
 Issues #2 and #3 remain open. Automatic PR-template population and the final
 integration records remain pending; passing CI alone does not close those items.
 

@@ -32,8 +32,9 @@ definition's body as a fresh subagent's brief. The ChatGPT bootstrap does not
 route to the review and has little space left. The `pushover-notify` skill is
 personal to the operator's machine.
 
-Next action: once the operator allows it, the agent posts the acceptance and
-fingerprint comments on #7, pushes the branch and opens the PR.
+Next action: once the operator allows GitHub writes (blocked by the agent's
+permission check), the agent posts the acceptance record and the
+proposal-fingerprint comment on #7, pushes the branch and opens the PR.
 
 After merge: confirm in a fresh Claude Code session that `/agents` lists all
 six reviewers.
