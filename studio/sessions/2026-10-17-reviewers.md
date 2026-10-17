@@ -4,9 +4,10 @@ Changed: six read-only reviewer subagents under `.claude/agents/` — code,
 protocol, agent-context, proposal, knowledge and resumability — and the closed
 [review loop](../workflows/review-change.md) they run in. `refine-proposal`
 1.1.0, `end-session` 3.1.0, `integrate-proposal` 2.0.1 and `github-flow` 1.0.1
-point at it; operating version 4.1.0; see [history](../changes.md). Pointers in
-`AGENTS.md` and the [studio guide](../README.md). Prepared on branch
-`docs/issue-7-review-loop` from main at `d5e2f79`; not merged.
+point at it (github-flow also defines the reviewed head); operating version
+4.1.0; see [history](../changes.md). Pointers in `AGENTS.md` and the [studio
+guide](../README.md). Prepared on branch `docs/issue-7-review-loop` from main at
+`d5e2f79`; not merged.
 
 Decisions: proposal [#7](https://github.com/michi-guns/bad-dream/issues/7)
 revision 1, accepted through the operator's explicit instructions in a local

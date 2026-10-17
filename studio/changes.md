@@ -14,11 +14,11 @@ three for other notes, tasks and records for returning humans. An unresolved
 loop escalates to the operator through their personal `pushover-notify` skill;
 the operator may waive a review. Agent review stays advisory and grants no
 acceptance or merge authority. Minor bumps: refine-proposal 1.1.0 and
-end-session 3.1.0 add review steps; patches: integrate-proposal 2.0.1 and
-github-flow 1.0.1 point at the loop. Operating 4.1.0 because the addition is
-compatible. Verified by `bun run verify`, `bun test` and the review loop
-reported in the PR. Rollback through a PR. See [the session
-record](sessions/2026-10-17-reviewers.md).
+end-session 3.1.0 add review steps; patches: integrate-proposal 2.0.1 points at
+the loop; github-flow 1.0.1 points at it and defines the reviewed head.
+Operating 4.1.0 because the addition is compatible. Verified by `bun run
+verify`, `bun test` and the review loop reported in the PR. Rollback through a
+PR. See [the session record](sessions/2026-10-17-reviewers.md).
 
 ## 2026-10-17 plain-language communication guide (pending)
 

@@ -30,10 +30,10 @@ Update [current state](../state/current.md) and write a [handoff](end-session.md
 Simulated acceptance is allowed only in disposable verification fixtures, never
 as production provenance.
 
-All file preparation occurs on working branches under [GitHub Flow](github-flow.md).
-Open required PRs, obtain checks and independent advisory agent review through
-[the review loop](review-change.md), then await
-separate human merge authorisation naming PR/head SHA. Earlier references to
-“commit” or “integration succeeded” do not permit direct main writes or closure
-on PR creation. Close only after required PRs merge and outcomes are verified;
-record implemented, verified, pending and blocked requirements separately.
+All file preparation occurs on working branches under [GitHub
+Flow](github-flow.md). Open required PRs, obtain checks and independent advisory
+agent review through [the review loop](review-change.md), then await separate
+human merge authorisation naming PR/head SHA. Earlier references to “commit” or
+“integration succeeded” do not permit direct main writes or closure on PR
+creation. Close only after required PRs merge and outcomes are verified; record
+implemented, verified, pending and blocked requirements separately.
