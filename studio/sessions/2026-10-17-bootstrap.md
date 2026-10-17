@@ -21,6 +21,8 @@ disabled. See [health evidence](../reports/backlog-health-2026-10-17.md) and
 [verification](../reports/setup-verification.md) for results and limitations.
 
 Local/remote status and remaining work are kept in [current state](../state/current.md).
+Initial foundation commit: `68e4708`, annotated local tag `studio-v1.0.0`.
+Working branch: `setup/studio-foundation`. No GitHub remote or push yet.
 The remote owner is awaiting explicit selection; bootstrap coordinates remain
 unfilled and are not ready to paste. Publication is not claimed.
 

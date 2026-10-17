@@ -109,3 +109,7 @@ choice, not renewed approval for the already-authorised setup. After that choice
 check/create the exact private remote, verify metadata, fill the bootstrap,
 rerun verification and publish the authorised initial contents. The annotated
 baseline tag and actual commit IDs are recorded through Git and protocol history.
+
+Initial foundation commit is `68e4708`; annotated tag `studio-v1.0.0` was created
+and verified locally. GitHub publication remains pending. Follow-up verification
+records may be committed after the tagged baseline without moving that tag.

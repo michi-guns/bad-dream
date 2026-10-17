@@ -11,6 +11,8 @@ explicit context precedence and reconciliation, human acceptance provenance,
 portable linked notes, pinned short-lived Backlog CLI and durable handoffs.
 No creative mechanic, engine or AI provider is chosen.
 
-`bootstrap` resolution: pending creation of annotated immutable tag
-`studio-v1.0.0` after the initial protocol commit. Once created, the tag resolves
-the exact baseline; never move it. Resolve snapshot SHAs externally through Git.
+`bootstrap` resolves to the annotated local immutable tag `studio-v1.0.0`,
+created after initial protocol commit `68e4708`. The tag resolves the exact
+protocol baseline; never move it. It has not been pushed. Resolve full snapshot
+SHAs externally through Git. Later repository-coordinate and verification edits
+do not change the meaning of this tagged protocol snapshot.
