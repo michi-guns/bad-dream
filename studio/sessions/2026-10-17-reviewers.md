@@ -19,19 +19,22 @@ on every review type, three rounds for ordinary notes and session records, and
 high-priority Pushover escalation. The reviewer set, the five-round limit
 elsewhere and the operator waiver (review-change *When*) are agent suggestions
 within that scope. The acceptance and fingerprint are recorded on #7. The
-operator authorised the merge as "merge PR #8 at 81b4279".
+operator authorised the merge of PR #8 at its reviewed head `81b4279` ("merge PR
+#8 at 81b4279"); `aebfa6d` is the resulting squash commit.
 
 Verified: `bun run verify` and `bun test` (12 pass) after every round's fixes;
 PR #8's checks and the post-merge checks on main passed. Review loops: protocol
-APPROVED in round 3, agent context in round 2, this record in round 2; PR #8
-lists each approving head.
+APPROVED in round 3, agent context in round 2, the original record in round 2
+(this follow-up has its own review); PR #8 lists each approving head.
 
 Open: the original checkout's `setup/studio-foundation` branch still holds the
 first draft (commits `e279b5a`, `b1eebdb`, never pushed), superseded by this
 branch and left untouched. Codex cannot load `.claude/agents/` and passes a
 definition's body as a fresh subagent's brief. The ChatGPT bootstrap does not
 route to the review and has little space left. The `pushover-notify` skill is
-personal to the operator's machine.
+personal to the operator's machine. #7 stays open until this follow-up record is
+in main.
 
-Next action: confirm in a fresh Claude Code session that `/agents` lists all six
-reviewers.
+Next action: 1. after this follow-up merges, the agent closes #7 with an
+integration comment; 2. confirm in a fresh Claude Code session that `/agents`
+lists all six reviewers. Then TASK-1 resumes.
