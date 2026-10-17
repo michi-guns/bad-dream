@@ -19,8 +19,9 @@ the loop; github-flow 1.0.1 points at it and defines the reviewed head.
 Operating 4.1.0 because the addition is compatible. Verified by `bun run
 verify`, `bun test` and the review loop reported in the PR. PR #8 was
 squash-merged at `aebfa6dc659a52b6f2d73a607cd2e78274260b2b`, identical to
-reviewed head `81b4279`; its post-merge checks passed. Rollback through a PR.
-See [the session record](sessions/2026-10-17-reviewers.md).
+reviewed head `81b4279ce7c66310b10a72caeb178a00e914b5ed`; its post-merge checks
+passed. Rollback through a PR. See [the session
+record](sessions/2026-10-17-reviewers.md).
 
 ## 2026-10-17 plain-language communication guide (merged)
 
@@ -28,21 +29,24 @@ Direct operator request adds studio/communication.md and links from the agent
 entry/studio guide. It explains the situation and next decision in everyday
 words, with technical details kept exact and placed after the practical point.
 The guide clarifies existing communication expectations; no approval or merge
-rule changes. PR #6 was merged into main at `d5e2f79`. See [the session
+rule changes. PR #6 was merged into main at
+`d5e2f791328947522fd875dd946658f7e2f02edd`. See [the session
 record](sessions/2026-10-17-plain-language.md).
 
 ## 4.0.0 — 2026-10-17 response guidance (merged; final records pending)
 
-Accepted #3 revision 4 extends #1 with response-guidance 1.0.0: stable useful stage
-labels (simple by default), truthful counts, every-response recaps/recommendations
-and complete bidirectional handoff prompts. Updates foundation, startup, task
-lifecycle, end-session, agent/bootstrap and templates. Prerequisite #2
-PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3. PR #5 then merged
-at 2112dcc8dc838de0aeec783363e1696e97af0f0e; its post-merge checks passed.
-Final issue records and the additional communication guide remain pending. Historical header rules remain in issue revisions;
-revision 4 governs. No task files/status or creative scope changes. See
+Accepted #3 revision 4 extends #1 with response-guidance 1.0.0: stable useful
+stage labels (simple by default), truthful counts, every-response
+recaps/recommendations and complete bidirectional handoff prompts. Updates
+foundation, startup, task lifecycle, end-session, agent/bootstrap and templates.
+Prerequisite #2 PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3. PR #5
+then merged at 2112dcc8dc838de0aeec783363e1696e97af0f0e; its post-merge checks
+passed. Final issue records remain pending; the communication guide merged
+through PR #6. Historical header rules remain in issue revisions; revision 4
+governs. No task files/status or creative scope changes. See
 [decision](../book/notes/response-guidance.md) and
-[verification](reports/response-guidance-verification.md). Rollback through a PR.
+[verification](reports/response-guidance-verification.md). Rollback through a
+PR.
 
 
 ## 3.0.0 — 2026-10-17 GitHub Flow (merged; follow-up verification pending)
