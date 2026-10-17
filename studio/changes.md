@@ -10,7 +10,8 @@ merge authorisation for one change, still gated by completed and approved review
 loops, passing checks and a pinned reviewed-head merge, followed by branch
 cleanup and junction-safe worktree removal. It does not accept proposals.
 Foundation 4.1.0 and change-protocol 3.1.0 name it as the alternative to a named
-merge authorisation; the PR template and AGENTS.md point to it. Minor versions
+merge authorisation; integrate-proposal 2.0.2 (patch), the studio guide, the
+ChatGPT bootstrap, the PR template and AGENTS.md point to it. Minor versions
 because the existing path stays valid. Verified by `bun run verify`, `bun test`
 and the review loops; the implementing PR's merge commit and checks are recorded
 on #10 after merge. Rollback through a PR. See [the session
