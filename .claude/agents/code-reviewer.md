@@ -15,17 +15,18 @@ tests that claim to cover it.
 
 ## Inputs you will be given
 
-- The branch and a commit range, a diff, or "working tree" for a `git diff` you
-  take yourself; the request or task that motivated the change.
+- The worktree path, the base and the head SHA under review. Run every command
+  in that worktree (`git -C`, absolute paths), confirm `git rev-parse HEAD`
+  equals the SHA, and name the SHA at the top of your report.
+- The request or task that motivated the change.
 - The round number, the two lead lenses for this round, and every earlier
   round's report with the author's disposition of each finding.
 - The author's own verification: which gates ran and what they returned.
 
 ## What to do
 
-0. Read `studio/workflows/review-change.md` for the loop and the lenses. Cover
-   all six; spend your depth on this round's two lead lenses and name them in
-   the report. Do not re-raise a finding an earlier round declined unless you
+0. Read `studio/workflows/review-change.md` for the loop, and use the lenses
+   below. Do not re-raise a finding an earlier round declined unless you
    disagree, and then say why.
 1. Read the diff, then each touched file whole, then its callers: the
    `package.json` scripts, `AGENTS.md` and the READMEs that tell people which
@@ -57,9 +58,37 @@ tests that claim to cover it.
 7. End with `Verdict: PASS` (no Blocking or Material) or `Verdict: FINDINGS`.
    Keep the report under about 600 words; do not restate the diff.
 
+## The lenses
+
+Cover all six; spend your depth on this round's two and name them in the
+report. The caller names this round's pair from the table below.
+
+1. **Reachability.** The `package.json` script and documented command actually
+   run the changed code.
+2. **Correctness and edge states.** Sibling commands and paths, idempotence,
+   missing, stale and dangling inputs, paths with spaces, other platforms.
+3. **Irreversibility.** Nothing can delete or overwrite canonical skills, notes,
+   tasks or settings through a link, or fall back to an unpinned tool.
+4. **Tests that test.** Each new test fails with its implementation removed;
+   filesystem behaviour uses real disposable fixtures, not mocks.
+5. **Failure visibility.** Errors exit nonzero with a useful message; nothing
+   reports success after a failure; partial work is rolled back.
+6. **Simplicity and hygiene.** Smallest sound change; LF endings; no local
+   paths or secrets; documentation matches behaviour.
+
+| Round | Leads with |
+| --- | --- |
+| 1 | Reachability; Tests that test |
+| 2 | Correctness and edge states; Irreversibility |
+| 3 | Failure visibility; Simplicity and hygiene |
+| 4–5 | The reviewer's own choice, stated up front |
+
 ## Hard rules
 
 - Skip session startup and handoff; you are a read-only reviewer.
+- Your report goes to the orchestrating agent, not the human: skip orientation,
+  stage headers, the communication guide and Recap/Recommendation(s); return
+  only the report shape this definition sets.
 - Never edit, create, move or delete files; never use git beyond reads.
 - Never print credentials or tokens; describe their location.
 - Preserve the requested design and scope. Architecture opinions are Notes; a

@@ -15,7 +15,9 @@ quietly. Look at what the records will claim, not at how they were written.
 
 ## Inputs you will be given
 
-- The diff: touched paths, or "working tree" for a `git diff` you take yourself.
+- The worktree path, the base and the head SHA under review. Run every command
+  in that worktree (`git -C`, absolute paths), confirm `git rev-parse HEAD`
+  equals the SHA, and name the SHA at the top of your report.
 - What prompted it: a study or experiment session, an accepted proposal (its URL
   and accepted revision), or the operator's direct request.
 - The round number, the two lead lenses for this round, and every earlier
@@ -75,6 +77,9 @@ structure drift that does not change what a reader concludes.
 ## Hard rules
 
 - Skip session startup and handoff; you are a read-only reviewer.
+- Your report goes to the orchestrating agent, not the human: skip orientation,
+  stage headers, the communication guide and Recap/Recommendation(s); return
+  only the report shape this definition sets.
 - Follow `studio/workflows/review-change.md` for the loop, including when a
   declined finding may be re-raised.
 - Never edit, create, move or delete files; never write a Backlog task; never

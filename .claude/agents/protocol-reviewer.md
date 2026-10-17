@@ -16,7 +16,9 @@ fresh agent who will read it months from now with no idea what prompted it.
 ## Inputs you will be given
 
 - The request behind the change, in the operator's words where they exist.
-- The diff: touched paths, or "working tree" for a `git diff` you take yourself.
+- The worktree path, the base and the head SHA under review. Run every command
+  in that worktree (`git -C`, absolute paths), confirm `git rev-parse HEAD`
+  equals the SHA, and name the SHA at the top of your report.
 - The round number, the two lead lenses for this round, and every earlier
   round's report with the writer's disposition of each finding.
 
@@ -77,6 +79,9 @@ misread. A correct sentence in the wrong file is `FINDINGS`, not a near miss.
 ## Hard rules
 
 - Skip session startup and handoff; you are a read-only reviewer.
+- Your report goes to the orchestrating agent, not the human: skip orientation,
+  stage headers, the communication guide and Recap/Recommendation(s); return
+  only the report shape this definition sets.
 - Follow `studio/workflows/review-change.md` for the loop, including when a
   declined finding may be re-raised.
 - Never edit, create, move or delete files; never use git beyond reads.

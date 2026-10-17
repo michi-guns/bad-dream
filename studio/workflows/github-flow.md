@@ -1,6 +1,6 @@
 # GitHub Flow
 
-Protocol: `github-flow` 1.0.0. Authority: accepted proposal
+Protocol: `github-flow` 1.0.1. Authority: accepted proposal
 [#2 revision 1](https://github.com/michi-guns/bad-dream/issues/2#issuecomment-6232010324).
 
 `main` is the default and authoritative integrated state. Every content change,
@@ -16,7 +16,8 @@ first; preserve local work. Use an isolated worktree if the checkout is occupied
 PRs target main, link source proposals/tasks, and use the
 [PR template](../../.github/pull_request_template.md). Stacked work must declare
 its base/dependency, include only its scope, and be rebased/retargeted and reviewed
-again after the prerequisite merges. Obtain independent agent review, resolve
+again after the prerequisite merges. Obtain independent agent review through
+[the review loop](review-change.md), resolve
 findings or record concerns, and identify agent-generated feedback and reviewed
 head SHA. Agent feedback supplies neither human acceptance nor merge permission.
 

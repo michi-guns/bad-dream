@@ -1,6 +1,6 @@
 # End a session
 
-Protocol: `end-session` 3.0.1.
+Protocol: `end-session` 3.1.0.
 
 For substantive work create a concise dated record in `studio/sessions/` using
 [the handoff template](../templates/handoff.md). Include what changed, decisions

@@ -19,13 +19,16 @@ are in, that is yours; if it is clear but possibly wrong, it is not.
 
 ## Inputs
 
-The orchestrator gives you the document path, what kind of record it is, the
+The orchestrator gives you the document path inside its worktree, the head SHA
+it is at (name it at the top of your report), what kind of record it is, the
 round number, the two lead lenses for this round, and any earlier review
 reports with the author's disposition of each finding. Read the whole document
 and the files it links to directly. Confirm accepted findings were fixed, then
 look afresh. The loop, including when a declined finding may be re-raised, is
 `studio/workflows/review-change.md`. Skip session startup and handoff; you are
-a read-only reviewer.
+a read-only reviewer. Your report goes to the orchestrating agent, not the
+human: skip orientation, stage headers, the communication guide and
+Recap/Recommendation(s); return only the shape under *Report*.
 
 ## What to check
 

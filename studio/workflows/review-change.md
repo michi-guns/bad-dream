@@ -1,6 +1,7 @@
 # Review a change
 
-Protocol: `review-change` 1.0.0.
+Protocol: `review-change` 1.0.0. Authority: accepted proposal
+[#7 revision 1](https://github.com/michi-guns/bad-dream/issues/7).
 
 A fresh reviewer finds what the author, who has been staring at the problem,
 cannot see. This loop is the independent advisory agent review that [GitHub
@@ -19,13 +20,13 @@ stays unreviewed in the handoff and PR.
 
 | Change | Reviewer | Closed before | Rounds |
 | --- | --- | --- | --- |
-| `scripts/` and their tests | `code-reviewer` | merge request | 5 |
-| Foundation, workflows, chapter contracts, conventions, templates, manifest | `protocol-reviewer` | merge request | 5 |
-| `AGENTS.md`, `CLAUDE.md`, skills, subagent definitions, ChatGPT bootstrap | `agent-context-reviewer` | merge request | 5 |
+| `scripts/` and their tests | `code-reviewer` | asking to merge | 5 |
+| Foundation, workflows, chapter contracts, conventions, templates, manifest | `protocol-reviewer` | asking to merge | 5 |
+| `AGENTS.md`, `CLAUDE.md`, skills, subagent definitions, ChatGPT bootstrap | `agent-context-reviewer` | asking to merge | 5 |
 | Refined proposal | `proposal-reviewer` | publication or triage | 5 |
-| Notes, decisions and tasks written while integrating a proposal | `knowledge-reviewer` | merge request | 5 |
-| Other book notes, studies, experiments and tasks | `knowledge-reviewer` | merge request | 3 |
-| Handoff, current state, orientation or README for humans | `resumability-reviewer` | merge request | 3 |
+| Notes, decisions and tasks written while integrating a proposal | `knowledge-reviewer` | asking to merge | 5 |
+| Other book notes, studies, experiments and tasks | `knowledge-reviewer` | asking to merge | 3 |
+| Handoff, current state, orientation or README for humans | `resumability-reviewer` | asking to merge | 3 |
 
 Definitions live in `.claude/agents/`. A tool that cannot load them (Codex,
 ChatGPT) passes the definition's body as a fresh subagent's or session's brief.
@@ -39,12 +40,12 @@ both reviewers in the same round.
 
 1. Finish the change and its gates: `bun test` for scripts, `bun run verify`
    for everything else.
-2. Spawn a fresh reviewer with the diff or path and the head SHA under review,
-   the request behind it, the round number, the round's two lead lenses, and every earlier report with
-   the author's disposition of each finding. Take the pair from the
-   reviewer's table for that round (the code table is below; each other
-   definition holds its own); name another pair only with a reason. The
-   reviewer covers every lens and reports a Blocking finding from any of them.
+2. Spawn a fresh reviewer with the worktree path, base and head SHA under
+   review, the request behind it, the round number, the round's two lead lenses,
+   and every earlier report with the author's disposition of each finding. Take
+   the pair from the reviewer's own table for that round; name another pair only
+   with a reason. The reviewer covers every lens and reports a Blocking finding
+   from any of them.
 3. Fix every **Blocking** and **Material** finding. Decide **Minor** and
    **Note** items on merit and write the disposition down. Re-run the gates.
 4. Repeat with a new reviewer while the verdict is FINDINGS with Blocking or
@@ -55,10 +56,11 @@ both reviewers in the same round.
 
 The loop is closed only when the last edit has been reviewed. After the
 approving round the author may apply that round's Minor and Note fixes; any
-other edit, or a gate that newly fails, reopens the loop at the next round.
-A change that spans two rows closes when both reviewers approve. Recording a
-review's outcome in the handoff or history does not reopen it, so the
-handoff's own review runs last.
+other edit, or a gate that newly fails, reopens the loop at the next round. An
+edit reopens only the loops whose rows cover the files it touches. A change that
+spans two rows closes when both reviewers approve. Recording a review's outcome
+in the handoff or history does not reopen a loop, so the handoff's own review
+runs last.
 
 The loop converges on the absence of defects, not on the reviewer running out
 of words. A reviewer that re-raises a declined Minor or Note says why it
@@ -68,53 +70,29 @@ disagrees.
 
 When a loop ends unresolved, the author sends the operator one push through
 their user-level `pushover-notify` skill; the operator has authorised this push
-for every unresolved loop. Codex lists the skill; Claude Code reads its
-`SKILL.md` under `~/.codex/skills/pushover-notify/` and runs its send script
-by the absolute path, as the skill's example does. Pass `-Priority 1` and
-`-Title "Bad Dream review"`. Keep the message under 1,024 characters: the
+for every unresolved loop. Codex and Claude Code both list the skill on the
+operator's machine; follow its own instructions, with high priority and the
+title "Bad Dream review". Keep the message within the skill's length limit: the
 change, the round count, and one short line per open Blocking or Material
 finding (severity and `file:line`); never credentials or note contents.
 
-Then say the same in the conversation and record it in the handoff and PR; the change
-waits for the operator, who may waive the remaining findings. A validation
-error sends nothing and may be corrected and sent once. If the skill is not
-installed or configured, or the request fails or times out, say so in the
-handoff and do not retry. The skill is personal to the operator's machine and
-is not part of this repository.
-
-## Code lenses
-
-Every code review covers all six and leads with two per round.
-
-1. **Reachability.** The `package.json` script and documented command actually
-   run the changed code.
-2. **Correctness and edge states.** Sibling commands and paths, idempotence,
-   missing, stale and dangling inputs, paths with spaces, other platforms.
-3. **Irreversibility.** Nothing can delete or overwrite canonical skills, notes,
-   tasks or settings through a link, or fall back to an unpinned tool.
-4. **Tests that test.** Each new test fails with its implementation removed;
-   filesystem behaviour uses real disposable fixtures, not mocks.
-5. **Failure visibility.** Errors exit nonzero with a useful message; nothing
-   reports success after a failure; partial work is rolled back.
-6. **Simplicity and hygiene.** Smallest sound change; LF endings; no local
-   paths or secrets; documentation matches behaviour.
-
-| Round | Leads with |
-| --- | --- |
-| 1 | Reachability; Tests that test |
-| 2 | Correctness and edge states; Irreversibility |
-| 3 | Failure visibility; Simplicity and hygiene |
-| 4–5 | The reviewer's own choice, stated up front |
+Then say the same in the conversation and record it in the handoff and PR; the
+change waits for the operator, who may waive the remaining findings. A
+validation error sends nothing and may be corrected and sent once. If the skill
+is not installed or configured, or the request fails or times out, say so in the
+handoff and do not retry. The skill is personal to the operator's machine and is
+not part of this repository.
 
 ## What the author reports
 
 In the PR's Verification section: the number of rounds per loop, each verdict,
 every Blocking and Material finding with what was done, every declined Minor
-with why, the final gate results and the reviewed head SHA. Minor and Note fixes
-pushed after the approving round are listed with the final head SHA. Record the
-same briefly in the session handoff. "Reviewed, APPROVED in round 2 at <SHA>" is
-a valid summary; "reviewed" alone is not. Agent review stays advisory; merging
-needs the operator's separate authorisation naming the PR and head SHA.
+with why, the final gate results, and each approving round's head SHA. List any
+Minor and Note fixes pushed after approval; the operator's merge authorisation
+names the final head, which is that reviewed head plus those listed fixes.
+Record the same briefly in the session handoff. "Reviewed, APPROVED in round 2
+at <SHA>" is a valid summary; "reviewed" alone is not. Agent review stays
+advisory.
 
 ## What the reviewer never does
 

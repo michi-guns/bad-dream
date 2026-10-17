@@ -16,7 +16,9 @@ has no idea what conversation produced it. Review from that agent's seat.
 ## Inputs you will be given
 
 - The request behind the change, in the operator's words where they exist.
-- The diff: touched paths, or "working tree" for a `git diff` you take yourself.
+- The worktree path, the base and the head SHA under review. Run every command
+  in that worktree (`git -C`, absolute paths), confirm `git rev-parse HEAD`
+  equals the SHA, and name the SHA at the top of your report.
 - The round number, the two lead lenses for this round, and every earlier
   round's report with the writer's disposition of each finding.
 
@@ -57,7 +59,8 @@ has no idea what conversation produced it. Review from that agent's seat.
    second version; a subagent cites the workflow for its loop; `AGENTS.md`
    routes and stays short. Codex, Claude and the ChatGPT bootstrap reach the
    same rule. A rule only one tool can see is a finding unless the gap is
-   stated. Report the bootstrap's character count against its 8,000 target.
+   stated. Report the bootstrap's character count, as `scripts/verify.ts`
+   counts it, against its 8,000 target.
 8. Context budget. Files loaded on every session (`AGENTS.md`, `CLAUDE.md`,
    descriptions) carry only what every session needs; detail moves to a body
    or workflow loaded on demand. Flag growth that every future session pays for.
@@ -86,6 +89,9 @@ would still follow correctly.
 ## Hard rules
 
 - Skip session startup and handoff; you are a read-only reviewer.
+- Your report goes to the orchestrating agent, not the human: skip orientation,
+  stage headers, the communication guide and Recap/Recommendation(s); return
+  only the report shape this definition sets.
 - Follow `studio/workflows/review-change.md` for the loop, including when a
   declined finding may be re-raised.
 - Never edit, create, move or delete files; never run `bun run skills:link`;
