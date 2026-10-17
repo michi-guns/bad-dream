@@ -1,12 +1,13 @@
 # End a session
 
-Protocol: `end-session` 3.0.0.
+Protocol: `end-session` 3.0.1.
 
 For substantive work create a concise dated record in `studio/sessions/` using
 [the handoff template](../templates/handoff.md). Include what changed, decisions
 and actual provenance, verification, uncertainty/blockers, next concrete action,
 and relevant paths/issues/tasks. Link to full notes instead of duplicating them.
 Update [current state](../state/current.md) with the shortest useful resume context.
+[Review](review-change.md) the handoff and current state last, before asking to merge.
 
 Inspect Git diff and ignored files; keep credentials and machine noise out.
 Distinguish local files, commits, pushed branches and merged content. Push or open

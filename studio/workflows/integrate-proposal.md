@@ -1,6 +1,6 @@
 # Integrate an accepted proposal
 
-Protocol: `integrate-proposal` 2.0.0.
+Protocol: `integrate-proposal` 2.0.1.
 
 Read the actual accepted proposal revision and acceptance provenance. Re-read
 current Git status, notes, chapter contracts and tasks. Use
@@ -31,7 +31,8 @@ Simulated acceptance is allowed only in disposable verification fixtures, never
 as production provenance.
 
 All file preparation occurs on working branches under [GitHub Flow](github-flow.md).
-Open required PRs, obtain checks and independent advisory agent review, then await
+Open required PRs, obtain checks and independent advisory agent review through
+[the review loop](review-change.md), then await
 separate human merge authorisation naming PR/head SHA. Earlier references to
 “commit” or “integration succeeded” do not permit direct main writes or closure
 on PR creation. Close only after required PRs merge and outcomes are verified;

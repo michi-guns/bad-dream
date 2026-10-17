@@ -1,5 +1,21 @@
 # Operating protocol history
 
+## 4.1.0 — 2026-10-17 fresh-context reviewers and closed review loop (pending)
+
+Accepted #7 revision 1 (operator acceptance recorded by agent from explicit
+local-session instructions). Adds review-change 1.0.0 and six read-only
+definitions under `.claude/agents/`: code, protocol, agent-context, proposal,
+knowledge and resumability reviewers. Every non-trivial change closes its loop
+before its merge request (proposals before publication or triage): five rounds
+for scripts, protocols, agent context, proposals and integration notes; three
+for other notes, tasks and records for returning humans. An unresolved loop
+escalates to the operator through their personal `pushover-notify` skill; the
+operator may waive a review. This is the advisory agent review GitHub Flow
+already requires; it grants no acceptance or merge authority. Patch bumps to
+refine-proposal 1.0.1, integrate-proposal 2.0.1 and end-session 3.0.1 point at
+it; minor operating bump because the addition is compatible. Rollback through a
+PR. See [the session record](sessions/2026-10-17-reviewers.md).
+
 ## 2026-10-17 plain-language communication guide (pending)
 
 Direct operator request adds studio/communication.md and links from the agent

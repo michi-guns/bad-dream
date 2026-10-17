@@ -24,6 +24,11 @@ merge authorisation. This guide has not been added to main yet.
 Issues #2 and #3 remain open. Automatic PR-template population and the final
 integration records remain pending; passing CI alone does not close those items.
 
+Proposal [#7](https://github.com/michi-guns/bad-dream/issues/7) revision 1
+(fresh-context reviewers and a closed review loop) is accepted; its files are
+prepared on `docs/issue-7-review-loop` and await review, a PR and separate
+merge authorisation. See [the reviewers record](../sessions/2026-10-17-reviewers.md).
+
 The original local checkout was preserved on setup/studio-foundation at 0d5cb38.
 Implementation used separate worktrees. Follow the
 [local migration guidance](../workflows/github-flow.md) deliberately; never
