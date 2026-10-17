@@ -1,0 +1,10 @@
+node_modules/
+.obsidian/
+.local/
+.cache/
+.env
+.env.*
+!.env.example
+*.log
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,12 @@
+{
+  "name": "bad-dream-studio",
+  "private": true,
+  "scripts": {
+    "backlog": "bun scripts/backlog.ts",
+    "verify": "bun scripts/verify.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "backlog.md": "1.54.0"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "chapter_index": "studio/chapters/index.md",
+  "operating_version": "1.0.0",
+  "protocols": {
+    "foundation": {
+      "path": "studio/foundation.md",
+      "version": "1.0.0"
+    },
+    "knowledge-note": {
+      "path": "studio/knowledge-note.md",
+      "version": "1.0.0"
+    },
+    "start-session": {
+      "path": "studio/workflows/start-session.md",
+      "version": "1.0.0"
+    },
+    "refine-proposal": {
+      "path": "studio/workflows/refine-proposal.md",
+      "version": "1.0.0"
+    },
+    "triage-proposal": {
+      "path": "studio/workflows/triage-proposal.md",
+      "version": "1.0.0"
+    },
+    "integrate-proposal": {
+      "path": "studio/workflows/integrate-proposal.md",
+      "version": "1.0.0"
+    },
+    "task-lifecycle": {
+      "path": "studio/workflows/task-lifecycle.md",
+      "version": "1.0.0"
+    },
+    "end-session": {
+      "path": "studio/workflows/end-session.md",
+      "version": "1.0.0"
+    },
+    "change-protocol": {
+      "path": "studio/workflows/change-protocol.md",
+      "version": "1.0.0"
+    },
+    "reconcile-context": {
+      "path": "studio/workflows/reconcile-context.md",
+      "version": "1.0.0"
+    },
+    "chapter-horror-studies": {
+      "path": "studio/chapters/horror-studies.md",
+      "version": "1.0.0"
+    },
+    "chapter-technology-experiments": {
+      "path": "studio/chapters/technology-experiments.md",
+      "version": "1.0.0"
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,5 @@
+repository: null
+branch: setup/studio-foundation
+book_root: book
+backlog_root: backlog
+remote_status: awaiting-owner

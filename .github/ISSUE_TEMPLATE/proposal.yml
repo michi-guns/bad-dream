@@ -1,0 +1,45 @@
+name: Refined proposal
+description: Propose a scoped change for human review.
+title: "Proposal: "
+body:
+  - type: markdown
+    attributes:
+      value: "This is a proposal, not acceptance. Closing after integration means notes/tasks were integrated, not that all game work finished."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem and intended outcome
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context, evidence and related records
+      description: Separate observations, assumptions and hypotheses.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change and scope
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale, alternatives and tradeoffs
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: Uncertainty and reconsideration triggers
+    validations:
+      required: true
+  - type: textarea
+    id: integration
+    attributes:
+      label: Affected areas and successful integration
+      description: Include task candidates only if justified. Acceptance records identify operator, date, scope, numbered revision and content fingerprint.
+    validations:
+      required: true
