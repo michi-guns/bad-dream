@@ -1,6 +1,6 @@
 # End a session
 
-Protocol: `end-session` 2.0.0.
+Protocol: `end-session` 3.0.0.
 
 For substantive work create a concise dated record in `studio/sessions/` using
 [the handoff template](../templates/handoff.md). Include what changed, decisions
@@ -18,3 +18,11 @@ head SHAs, checks, settings evidence/blockers and exact human actions. Keep
 accepted-but-unmerged proposals open. Deliver updated ChatGPT instructions and
 local migration guidance when coordinates change. Never treat PR preparation as
 merge authorisation.
+
+When returning work to another surface, follow
+[response guidance](response-guidance.md): explicitly announce **Continue in
+ChatGPT** or **Continue in the local agent**, explain why and provide a complete
+paste-ready receiving prompt using [handoff](../templates/handoff.md). Include
+actual stage/progress, results/evidence, scope/status, source revisions, pending
+human decisions and authority boundaries. Local paths alone are insufficient
+for chat. Every final response also has brief bullet Recap and Recommendation(s).

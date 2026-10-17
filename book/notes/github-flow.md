@@ -14,8 +14,10 @@ protocol_revision: b2bf58aec9e5a5cd11107d6f27b80e27f7b918a1
 
 Accepted scope: main, PR-only content, branch/PR conventions, canonical
 Linux/Windows CI, verified protections and the one-time administrative rename.
-Implementation is prepared, **not integrated**. Main protection is configured
-and verified by readback after the operator made the repository public.
+The implementation merged through [PR #4](https://github.com/michi-guns/bad-dream/pull/4)
+at `1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3`. Post-merge CI passed; automatic
+PR-template verification and final issue disposition remain pending. Main
+protection is configured and verified by readback on the public repository.
 
 Acceptance: Jimzord (connected account jimzord12), 2026-10-17, explicit chat
 instruction “I accept them all”, recorded truthfully by an agent in

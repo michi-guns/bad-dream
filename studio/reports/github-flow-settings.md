@@ -52,9 +52,11 @@ Observed earlier the same day using authenticated GitHub CLI as jimzord12.
   read legacy protection (“Resource not accessible by integration”), an
   integration restriction rather than an administrator limitation.
 
-## Still pending
+## Follow-up after PR #4 merged
 
-CI execution/results and review evidence are tracked in the session record and
-PR. Automatic template population remains pending until #2 is merged and a
-subsequent PR is opened. Main-push confirmation also requires a later authorised
-merge. Keep #2 open until its implementation is merged and verified.
+PR #4 merged at `1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3`.
+The [main-push CI run](https://github.com/michi-guns/bad-dream/actions/runs/39025055645)
+completed successfully. Automatic template population with a newly prepared PR
+remains pending. Keep issue #2 open until its remaining checks and final
+integration record are complete. The administrator protection readbacks above
+remain their recorded evidence; this follow-up does not claim a new admin read.
