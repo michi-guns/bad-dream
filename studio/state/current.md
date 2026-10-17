@@ -32,8 +32,8 @@ Flow](../workflows/github-flow.md), #10 and [the in-one-go
 record](../sessions/2026-10-17-in-one-go.md). See [the reviewers
 record](../sessions/2026-10-17-reviewers.md).
 
-The original local checkout is now on main; its superseded draft commits are
-kept on the local branch `archive/local-reviewers-draft`, never pushed.
+The operator's single local checkout is on main; the old worktrees and local
+archive branches were removed after checking they held nothing beyond main.
 Implementation used separate worktrees. Follow the [local migration
 guidance](../workflows/github-flow.md) deliberately; never silently reset or
 overwrite local work.
@@ -41,12 +41,12 @@ overwrite local work.
 Current focus: TASK-1. TASK-1 remains To Do and unstarted. No Backlog.md files
 were modified. Reconstruct its execution brief through the pinned CLI before
 eventual execution. No creative mechanic, engine or production scope is
-accepted.
+accepted. Start it in a new session; see [the tooling
+wrap-up](../sessions/2026-10-17-tooling-wrap-up.md).
 
-The human still needs to paste [the current ChatGPT
-instructions](../chatgpt-project-instructions.md) into project settings.
-Repository edits do not change app settings. Earlier setup checks remain in
-[setup verification](../reports/setup-verification.md).
+The operator reported pasting [the current ChatGPT
+instructions](../chatgpt-project-instructions.md) into project settings. Earlier
+setup checks remain in [setup verification](../reports/setup-verification.md).
 
 Resume from [the guide](../README.md),
 [GitHub Flow](../workflows/github-flow.md),
