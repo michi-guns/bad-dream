@@ -23,23 +23,25 @@ integration records remain pending; passing CI alone does not close those items.
 
 Proposal [#7](https://github.com/michi-guns/bad-dream/issues/7) revision 1
 (fresh-context reviewers and a closed review loop) is in main through [PR
-#8](https://github.com/michi-guns/bad-dream/pull/8), squash commit `aebfa6d`;
-its post-merge checks passed. #7 stays open until this record is in main; then
-the agent closes it. Still to check: a fresh Claude Code session lists all six
-reviewers under `/agents`. See [the reviewers
+#8](https://github.com/michi-guns/bad-dream/pull/8), squash commit `aebfa6d`,
+and #7 is closed with its integration record. Claude Code loaded the six
+reviewers and ran them as agent types; to check them, ask Claude which subagents
+it can use (the `/agents` wizard no longer exists). Saying **in one go** now
+authorises the full GitHub Flow cycle through merge and cleanup; see [GitHub
+Flow](../workflows/github-flow.md), #10 and [the in-one-go
+record](../sessions/2026-10-17-in-one-go.md). See [the reviewers
 record](../sessions/2026-10-17-reviewers.md).
 
-The original local checkout was preserved on setup/studio-foundation at 0d5cb38;
-it now also holds two unpushed draft commits superseded by the #7 branch.
-Implementation used separate worktrees. Follow the
-[local migration guidance](../workflows/github-flow.md) deliberately; never
-silently reset or overwrite local work. The communication conflict fix was prepared separately
-and did not access or change the operator's checkout.
+The original local checkout is now on main; its superseded draft commits are
+kept on the local branch `archive/local-reviewers-draft`, never pushed.
+Implementation used separate worktrees. Follow the [local migration
+guidance](../workflows/github-flow.md) deliberately; never silently reset or
+overwrite local work.
 
-Current focus: TASK-1, after closing #7 and the `/agents` check. TASK-1 remains
-To Do and unstarted. No Backlog.md files were modified. Reconstruct its
-execution brief through the pinned CLI before eventual execution. No creative
-mechanic, engine or production scope is accepted.
+Current focus: TASK-1. TASK-1 remains To Do and unstarted. No Backlog.md files
+were modified. Reconstruct its execution brief through the pinned CLI before
+eventual execution. No creative mechanic, engine or production scope is
+accepted.
 
 The human still needs to paste [the current ChatGPT
 instructions](../chatgpt-project-instructions.md) into project settings.

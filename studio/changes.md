@@ -1,5 +1,22 @@
 # Operating protocol history
 
+## 4.2.0 — 2026-10-17 "in one go" shorthand
+
+Proposal #10 revision 1, accepted through the operator's explicit instruction
+and recorded on #10. Reason: routine changes needed a second operator message
+just to name the reviewed head for merge. Adds github-flow 1.1.0's *In one go*
+section: when the operator says it in the conversation, the phrase is advance
+merge authorisation for one change, still gated by completed and approved review
+loops, passing checks and a pinned reviewed-head merge, followed by branch
+cleanup and junction-safe worktree removal. It does not accept proposals.
+Foundation 4.1.0 and change-protocol 3.1.0 name it as the alternative to a named
+merge authorisation; integrate-proposal 2.0.2 (patch), the studio guide, the
+ChatGPT bootstrap, the PR template and AGENTS.md point to it. Minor versions
+because the existing path stays valid. Verified by `bun run verify`, `bun test`
+and the review loops; the implementing PR's merge commit and checks are recorded
+on #10 after merge. Rollback through a PR. See [the session
+record](sessions/2026-10-17-in-one-go.md).
+
 ## 4.1.0 — 2026-10-17 fresh-context reviewers and closed review loop (merged)
 
 Proposal #7 revision 1, accepted through the operator's explicit instructions in

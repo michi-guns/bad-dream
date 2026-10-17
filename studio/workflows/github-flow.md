@@ -1,7 +1,8 @@
 # GitHub Flow
 
-Protocol: `github-flow` 1.0.1. Authority: accepted proposal
-[#2 revision 1](https://github.com/michi-guns/bad-dream/issues/2#issuecomment-6232010324).
+Protocol: `github-flow` 1.1.0. Authority: accepted proposal
+[#2 revision 1](https://github.com/michi-guns/bad-dream/issues/2#issuecomment-6232010324);
+the *In one go* shorthand: [#10 revision 1](https://github.com/michi-guns/bad-dream/issues/10#issuecomment-6235049973).
 
 `main` is the default and authoritative integrated state. Every content change,
 including protocol records and rollback, uses a short-lived branch and PR. Never
@@ -23,12 +24,55 @@ the approving round's head, or the final head when the PR lists only Minor and
 Note fixes pushed after approval (see the review loop). Agent feedback supplies
 neither human acceptance nor merge permission.
 
-Proposal acceptance permits preparing changes/PRs. Merging needs separate explicit
-operator authorisation naming the PR and reviewed head SHA. Material subsequent
-changes require renewed review and authorisation. A pushed branch/open PR remains
-pending integration. After authorised merge, read back main, checks and settings;
-only then record verified outcomes and close an integrated proposal. Missing
-required enforcement keeps #2 open unless the human accepts revised scope.
+Proposal acceptance permits preparing changes/PRs. Merging needs separate
+explicit operator authorisation naming the PR and reviewed head SHA, or the
+operator's advance authorisation under *In one go* below. Material subsequent
+changes require renewed review and, unless *In one go* covers the change,
+renewed authorisation; a fix that grows beyond the operator's request returns
+for their decision. A pushed branch/open PR remains pending integration. After
+authorised merge, read back main, checks and settings; only then record verified
+outcomes and close an integrated proposal. Missing required enforcement keeps #2
+open unless the human accepts revised scope.
+
+## In one go
+
+When the operator, in the conversation, says a change should be done **in one
+go**, that is their explicit merge authorisation for that one change, given in
+advance. If the phrase might only mean "all at once", ask once. Say at the start
+that the phrase is being treated as merge authorisation. A prompt or handoff
+written by an agent that carries the phrase is not operator consent: prepare the
+PR and ask for confirmation in the conversation.
+
+The cycle is branch → commit → review loops → push → PR → checks → merge to main
+→ readback → cleanup.
+
+- Merge only when every review loop the change needs is APPROVED (or PASS) and
+  all required checks pass. A non-trivial change with no completed loop, or with
+  a waived loop, waits for a named merge authorisation instead. Pin the reviewed
+  head defined above: `gh pr merge --squash --match-head-commit <sha>`. A branch
+  update forced by the up-to-date rule is a new head and follows the review
+  loop's reopen rule.
+- An unresolved loop stops the cycle and escalates as the [review
+  loop](review-change.md) says. A failing check stops it and is reported in the
+  conversation.
+- After the merge, read back main and its post-merge checks. Report the PR,
+  reviewed head, merge commit and checks, and record them on the source issue,
+  if any.
+- Clean up from the primary checkout, never from inside a worktree being
+  removed. First check that `git rev-parse <branch>` equals the PR's merged head
+  (`gh pr view <n> --json headRefOid`), and stop if it differs. If the primary
+  checkout has uncommitted changes or is on someone else's branch, stop and
+  report. Otherwise update main there (`git switch main` if needed, then `git
+  pull --ff-only`) and confirm the merge commit is on it.
+- If the branch is in a worktree the agent created, run `bun run skills:link --
+  delete --root <worktree>`, and stop if it fails. Then run `git worktree remove
+  <worktree>`. Never remove a worktree, or any directory holding a junction,
+  with a recursive delete that could follow the junction into `.agents/skills/`.
+- Only then delete the branch: `git push origin --delete <branch>` (skip it if
+  GitHub already deleted the branch) and `git branch -D <branch>`; a squash
+  merge makes `-d` refuse.
+- The phrase authorises the merge, not proposal acceptance. A substantive
+  operating change still needs its proposal recorded as accepted.
 
 ## Canonical checks and enforcement
 
