@@ -18,16 +18,16 @@ passed. The response guidance is now in main.
 
 The plain-language communication guide from
 [PR #6](https://github.com/michi-guns/bad-dream/pull/6) is in main at `d5e2f79`.
-Current focus: proposal #7, below.
+Current focus: TASK-1, below, once the #7 records are closed.
 Issues #2 and #3 remain open. Automatic PR-template population and the final
 integration records remain pending; passing CI alone does not close those items.
 
 Proposal [#7](https://github.com/michi-guns/bad-dream/issues/7) revision 1
-(fresh-context reviewers and a closed review loop) is accepted through the
-operator's explicit instructions. Its files are committed on
-`docs/issue-7-review-loop`, not yet pushed; the acceptance and fingerprint
-comments on #7 await a permission, then a PR and separate merge authorisation.
-See [the reviewers record](../sessions/2026-10-17-reviewers.md).
+(fresh-context reviewers and a closed review loop) is in main through [PR
+#8](https://github.com/michi-guns/bad-dream/pull/8), squash commit `aebfa6d`;
+its post-merge checks passed. #7 closes once this record is in main. Still to
+check: a fresh Claude Code session lists all six reviewers under `/agents`. See
+[the reviewers record](../sessions/2026-10-17-reviewers.md).
 
 The original local checkout was preserved on setup/studio-foundation at 0d5cb38;
 it now also holds two unpushed draft commits superseded by the #7 branch.
