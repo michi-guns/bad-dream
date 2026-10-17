@@ -25,7 +25,9 @@ Use concise structured text. Explain a misremembered workflow before treating it
 as an override; distinguish permanent amendments from bounded exceptions.
 
 Use [startup](workflows/start-session.md) for a consistent snapshot and
-[reconciliation](workflows/reconcile-context.md) for contradictions. See
+[reconciliation](workflows/reconcile-context.md) for contradictions, and
+[the closed review loop](workflows/review-change.md) before asking to merge any
+non-trivial change or publishing or triaging a proposal. See
 [chapter contracts](chapters/index.md), [note conventions](knowledge-note.md),
 [protocol changes](workflows/change-protocol.md), and [history](changes.md).
 Notes stay in place when tasks are created. Git synchronises files; remote

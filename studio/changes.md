@@ -1,5 +1,25 @@
 # Operating protocol history
 
+## 4.1.0 — 2026-10-17 fresh-context reviewers and closed review loop (pending)
+
+Proposal #7 revision 1, accepted through the operator's explicit instructions in
+a local Claude Code session; the remote acceptance record on #7 is pending.
+Reason: GitHub Flow requires independent agent review but did not say who
+reviews what or when a review is finished. Adds review-change 1.0.0 and six
+read-only definitions under `.claude/agents/`: code, protocol, agent-context,
+proposal, knowledge and resumability reviewers. Every non-trivial change closes
+its loop before asking to merge (proposals before publication or triage): five
+rounds for scripts, protocols, agent context, proposals and integration notes;
+three for other notes, tasks and records for returning humans. An unresolved
+loop escalates to the operator through their personal `pushover-notify` skill;
+the operator may waive a review. Agent review stays advisory and grants no
+acceptance or merge authority. Minor bumps: refine-proposal 1.1.0 and
+end-session 3.1.0 add review steps; patches: integrate-proposal 2.0.1 points at
+the loop; github-flow 1.0.1 points at it and defines the reviewed head.
+Operating 4.1.0 because the addition is compatible. Verified by `bun run
+verify`, `bun test` and the review loop reported in the PR. Rollback through a
+PR. See [the session record](sessions/2026-10-17-reviewers.md).
+
 ## 2026-10-17 plain-language communication guide (pending)
 
 Direct operator request adds studio/communication.md and links from the agent

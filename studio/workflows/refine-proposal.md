@@ -1,6 +1,6 @@
 # Refine a proposal
 
-Protocol: `refine-proposal` 1.0.0.
+Protocol: `refine-proposal` 1.1.0.
 
 Read foundation, current state, [reconciliation](reconcile-context.md), relevant
 chapter contracts and existing related notes/issues/tasks. Use pasted material
@@ -19,11 +19,13 @@ Drafts live in `studio/drafts/` when a file is useful and are non-authoritative.
 “Refine” means draft. Publication or updating a remote issue requires an explicit
 request or existing authorisation; once given, do not ask redundantly.
 
-Before publishing, re-read the relevant remote revision and search for duplicates.
-Discover labels first; preserve unrelated labels. Use `type:proposal` and one
-available lifecycle label if useful. If unavailable, record publication pending
-and never auto-publish a queue on reconnect. For multiline CLI bodies use a
-UTF-8 body file with `gh issue create --body-file`, not shell interpolation.
+Before publishing or presenting the draft for triage, [review](review-change.md)
+it. Before publishing, re-read the relevant remote revision and search for
+duplicates. Discover labels first; preserve unrelated labels. Use
+`type:proposal` and one available lifecycle label if useful. If unavailable,
+record publication pending and never auto-publish a queue on reconnect. For
+multiline CLI bodies use a UTF-8 body file with `gh issue create --body-file`,
+not shell interpolation.
 
 Number material proposal revisions and fingerprint the exact UTF-8 proposal body
 with SHA-256. Preserve accepted revision text in history/comments or an immutable

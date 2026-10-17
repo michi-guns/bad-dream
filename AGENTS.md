@@ -10,6 +10,8 @@ Use the pinned CLI through `bun run backlog -- <arguments>`; read its
 `instructions overview` before managing tasks. Task files are tool-managed.
 Run `bun run verify` after changing knowledge or protocols, and `bun test`
 after changing the checker. Preserve existing work and inspect Git status first.
+Review non-trivial changes with a fresh reviewer from `.claude/agents/` as
+[the review workflow](studio/workflows/review-change.md) assigns.
 
 Author shared skills only in `.agents/skills/`. Claude Code reads them through
 the local `.claude/skills` junction; run `bun run skills:link` after cloning or

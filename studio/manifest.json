@@ -1,6 +1,6 @@
 {
   "chapter_index": "studio/chapters/index.md",
-  "operating_version": "4.0.0",
+  "operating_version": "4.1.0",
   "protocols": {
     "foundation": {
       "path": "studio/foundation.md",
@@ -16,7 +16,7 @@
     },
     "refine-proposal": {
       "path": "studio/workflows/refine-proposal.md",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     "triage-proposal": {
       "path": "studio/workflows/triage-proposal.md",
@@ -24,7 +24,7 @@
     },
     "integrate-proposal": {
       "path": "studio/workflows/integrate-proposal.md",
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     "task-lifecycle": {
       "path": "studio/workflows/task-lifecycle.md",
@@ -32,7 +32,7 @@
     },
     "end-session": {
       "path": "studio/workflows/end-session.md",
-      "version": "3.0.0"
+      "version": "3.1.0"
     },
     "change-protocol": {
       "path": "studio/workflows/change-protocol.md",
@@ -52,10 +52,14 @@
     },
     "github-flow": {
       "path": "studio/workflows/github-flow.md",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     "response-guidance": {
       "path": "studio/workflows/response-guidance.md",
+      "version": "1.0.0"
+    },
+    "review-change": {
+      "path": "studio/workflows/review-change.md",
       "version": "1.0.0"
     }
   },
