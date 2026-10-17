@@ -34,9 +34,10 @@ recaps/recommendations, complete two-way handoffs, versioned protocols/templates
 bootstrap and offline decision rationale. No task records changed. Behavioural
 examples are in [verification](../reports/response-guidance-verification.md).
 
-Dependency: merge #4 only with separate human authorisation, then retarget/rebase
-#3 to main, rerun CI and obtain review/authorisation for the resulting head.
-Until then #3's review base is #4's branch; it remains pending integration.
+Dependency: merge #4 only with separate human authorisation, then reconcile/rebase
+#3 on current main, rerun CI and obtain review/authorisation for the resulting
+head. PR #5 targets main for combined canonical CI; its diff includes prerequisite
+#4 until that merges. Review #3 alone against #4's head.
 
 Hosted #2 CI run 39019785481 passed Linux, Windows and Required checks.
 Independent agent review of 4986c99b92939c9b5e098a1ac474e32feda281f8 found
@@ -46,3 +47,16 @@ final lines and records evidence. Final reviewed head/checks are reported on PR 
 #3 local verification: frozen install, bun run verify, and 12/12 Windows tests
 passed with 70 assertions. Six illustrative behaviour scenarios passed manual
 walkthrough; they assert no actual TASK-1 progress. PR/review evidence follows.
+
+Published #3 as [PR #5](https://github.com/michi-guns/bad-dream/pull/5).
+#4 final head 9f77a7500b884dd078416b4c055a860c2e18b1b3 independently reviewed
+with no concerns; all three checks passed in run 39019890266. #3 canonical local
+verification passed after reconciling the dependency. Hosted #3 results and its
+final independently reviewed SHA are recorded on PR #5, avoiding a self-hash.
+
+Human actions: decide compatible plan support or propose revised protection
+scope; do not treat blocked enforcement as complete. No merges are authorised.
+Review PR #4 first. After authorised integration, verify automatic template
+population with a subsequent PR and main-push checks. Paste the updated ChatGPT
+bootstrap manually (under 8,000 characters; app field acceptance still pending),
+and migrate the original checkout deliberately using GitHub Flow guidance.

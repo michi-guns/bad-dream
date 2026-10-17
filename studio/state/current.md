@@ -4,7 +4,8 @@ Last reviewed: 2026-10-17.
 
 Current focus: prepare accepted operating proposals #2 revision 1, then #3
 revision 4. #2 is prepared in [PR #4](https://github.com/michi-guns/bad-dream/pull/4).
-#3 response guidance is prepared on a dependent working branch; both remain
+#3 response guidance is prepared in [PR #5](https://github.com/michi-guns/bad-dream/pull/5),
+a dependent main-targeted PR including #4 until its merge; both remain
 pending integration. No merge
 is authorised. Main is now the remote default at b2bf58a after the administrative
 rename; no direct content changes were made there. See
