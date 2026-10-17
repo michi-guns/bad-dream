@@ -4,10 +4,9 @@
 
 Direct operator request adds two thin shared skills under `.agents/skills/`:
 `start-session` and `end-session`. They point at the canonical start-session and
-end-session workflows and embed no second version; `/start-session` (Codex:
-`$start-session`) replaces a pasted next-session prompt for local sessions. No
-protocol text or version changes. Verified by `bun run verify`, `bun test` and
-the review loop reported in the PR. Rollback through a PR.
+end-session workflows and embed no second version. No protocol text or version
+changes. Verified by `bun run verify`, `bun test` and the review loop reported
+in the PR. Rollback through a PR.
 
 ## 4.2.0 — 2026-10-17 "in one go" shorthand
 

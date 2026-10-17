@@ -1,24 +1,26 @@
 ---
 name: end-session
-description: End a substantive Bad Dream work session with a durable handoff. Writes the dated session record and current-state update, reviews them, delivers them through a PR, and gives the operator a paste-ready start for the next session. Use when the operator wants to stop, wrap up, hand off, or continue in a new session.
+description: End a substantive Bad Dream work session with a durable handoff. Writes the dated session record and current-state update, reviews them, and prepares the next session's start. Use when the operator wants to stop for now, end the session, or continue in a new session; not for a proposal or migration handoff, which is refine-proposal.
 ---
 
 Follow the canonical workflow at `studio/workflows/end-session.md` and the
 handoff template at `studio/templates/handoff.md`; do not maintain a second
 embedded version.
 
-1. Inspect Git status and diff. Name what is local, committed, pushed, merged and
-   still open, with exact PRs, heads and issues.
-2. On a working branch, write the dated record in `studio/sessions/` and update
-   `studio/state/current.md` so both stay true after merge. Run the review loop
-   in `studio/workflows/review-change.md` on them last.
-3. Push and open the PR under `studio/workflows/github-flow.md`. Merge only with
-   the operator's named merge authorisation or their *In one go* instruction,
-   then read back main and clean up as that workflow says.
-4. End with the next-session start: for a new local session, tell the operator
-   to run `/start-session` (Codex: `$start-session`), adding only what the
-   repository does not hold. For a move to ChatGPT, give the full paste-ready
-   prompt that `studio/workflows/response-guidance.md` requires.
+1. Inspect Git status, diff and ignored files; keep credentials and machine
+   noise out. Name what is local, committed, pushed, merged and still open, with
+   exact PRs, heads and issues.
+2. Create or use a working branch, then write the dated record in
+   `studio/sessions/` and update `studio/state/current.md` so both stay true
+   after merge. Run the review loop in `studio/workflows/review-change.md` on
+   them last.
+3. Push and open the PR only under the operator's explicit authorisation;
+   otherwise ask. Merge only with their named merge authorisation or their
+   *In one go* instruction, then read back main and clean up as
+   `studio/workflows/github-flow.md` says.
+4. Give the paste-ready next-session prompt the workflow and
+   `studio/workflows/response-guidance.md` require. For a new local session it
+   can open with `/start-session` (Codex: `$start-session`).
 
-If nothing was written to the repository, give a portable handoff marked not
-integrated instead.
+If this session cannot write to the repository, skip steps 2 and 3 and give a
+portable handoff marked not integrated.

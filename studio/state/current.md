@@ -40,10 +40,10 @@ migration guidance](../workflows/github-flow.md) deliberately; never silently
 reset or overwrite local work.
 
 Current focus: TASK-1, to start in a new session. It is To Do and unstarted; the
-operator assigns its owner and chooses the first question. In a new session, run
-`/start-session` (Codex: `$start-session`); it loads this state and orients the
-operator. Then `bun run backlog -- task view TASK-1 --plain`. No creative
-mechanic, engine or production scope is accepted.
+operator assigns its owner and chooses the first question. In a new local
+session, run `/start-session` (Codex: `$start-session`). Then `bun run backlog
+-- task view TASK-1 --plain`. No creative mechanic, engine or production scope
+is accepted.
 
 The operator reported pasting the ChatGPT instructions from main after PR #11
 ([current file](../chatgpt-project-instructions.md)) into project settings; this

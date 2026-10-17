@@ -25,7 +25,6 @@ guidance), from an earlier session, stay open until their final integration
 records are written; see [current state](../state/current.md). TASK-1 is To Do
 and unstarted; the operator assigns its owner and chooses the first question.
 
-Next action: in a new session, run `/start-session` (Codex: `$start-session`),
-ask the operator to assign TASK-1's owner, then start it (review the creative
-brief and choose the first question) with `bun run backlog -- task view TASK-1
---plain`.
+Next action: in a new session, ask the operator to assign TASK-1's owner, then
+start it (review the creative brief and choose the first question) with `bun run
+backlog -- task view TASK-1 --plain`.
