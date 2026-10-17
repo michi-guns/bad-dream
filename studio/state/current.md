@@ -2,48 +2,27 @@
 
 Last reviewed: 2026-10-17.
 
-Milestone: establish a recoverable studio workspace, then review the creative brief.
-Foundation, proposal workflows, chapter contracts, book navigation and three
-bootstrap research/review tasks are prepared. Creative concepts remain exploratory.
+Current focus: prepare accepted operating proposals #2 revision 1, then #3
+revision 4. #2 files are on a working branch pending PR integration; no merge
+is authorised. Main is now the remote default at b2bf58a after the administrative
+rename; no direct content changes were made there. See
+[GitHub Flow](../workflows/github-flow.md) and
+[protection blocker/owner steps](../reports/github-flow-settings.md).
 
-Current focus: operating update #1 is integrated; next, orient the human for
-TASK-1 and choose the first bounded question. Before TASK-1 execution, reconstruct
-its working method using the current task lifecycle and persist through the pinned
-CLI before the next substantive task write. TASK-1 has not been started here.
-Local branch: `setup/studio-foundation`. Setup changes are committed locally.
-Repository: `michi-guns/bad-dream`, private, explicitly selected by the operator.
-The remote is linked as `origin`; the setup branch and `studio-v1.0.0` baseline
-tag are published. GitHub's default branch is `setup/studio-foundation`.
-No PR or merge has occurred; this is the new repository's initial content.
+The original checkout remains on setup/studio-foundation at 0d5cb38; it was
+clean and behind the remote. Implementation uses a separate worktree. Follow
+the migration guidance deliberately; preserve existing local work.
 
-Published update: Claude Code now shares `AGENTS.md` through `CLAUDE.md` and skills
-through `.claude/skills` → `.agents/skills`. The junction manager, instructions
-and functional/E2E tests are published in commit `05c40cb`, following the
-operator's explicit push request. All 12 tests and file validation pass. Claude runtime invocation remains
-pending. See [the shared-skills handoff](../sessions/2026-10-17-shared-skills.md).
+TASK-1 remains To Do and unstarted. No Backlog.md files were modified. Reconstruct
+its execution brief through the pinned CLI before eventual execution. No creative
+mechanic, engine or production scope is accepted. #1 remains integrated at
+b2bf58a; historical setup and shared-skills evidence are retained in session records.
 
-Published operating update: proposal [#1](https://github.com/michi-guns/bad-dream/issues/1)
-records explicit operator approval for guided task execution, structured text and
-correction of misremembered workflows before informed amendments/exceptions.
-Operating version is 2.0.0. See the
-[session handoff](../sessions/2026-10-17-guided-task-execution.md) and
-[accepted rationale](../../book/notes/guided-task-execution.md).
-Task contents/status remain unchanged; new protocol behaviour needs its first
-real task session. The updated ChatGPT bootstrap must be pasted into project
-settings by the operator; changing this file does not change app settings.
+ChatGPT project settings need a human paste of
+[the updated instructions](../chatgpt-project-instructions.md) after reviewing
+this pending change; repository edits do not update app settings. Remaining
+bootstrap checks are in [setup verification](../reports/setup-verification.md).
 
-Remaining setup checks: Obsidian GUI navigation/backlinks; fresh-session Codex
-instruction loading and skill invocation behaviour; actual ChatGPT instruction-field
-limit. Exact results are in [setup verification](../reports/setup-verification.md).
-The ChatGPT bootstrap coordinates are filled for this repository and branch.
-Skill metadata discovery passed in a fresh app-server process; a separate model
-session has not been started to test invocation behaviour.
-
-Next project action: review `TASK-1` through the pinned CLI and clarify intended
-player emotions/core decisions before choosing a bounded first research question.
-`TASK-2` tests the study template in one real session; `TASK-3` proposes a small
-first research set. All are To Do, owner needed, and explicitly sourced to the
-bootstrap brief. No game, engine, AI mechanic or study list has been accepted.
-
-Resume with [studio guide](../README.md), [orientation](../../book/notes/project-orientation.md)
-and [session handoff](../sessions/2026-10-17-bootstrap.md).
+Resume from [the guide](../README.md),
+[GitHub Flow decision](../../book/notes/github-flow.md) and
+[operating handoff](../sessions/2026-10-17-operating-proposals.md).

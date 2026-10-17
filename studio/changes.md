@@ -1,5 +1,16 @@
 # Operating protocol history
 
+## 3.0.0 — 2026-10-17 GitHub Flow (pending integration)
+
+Accepted #2 revision 1 and the supplemental simple acceptance-comment convention.
+Adds github-flow 1.0.0, PR template and pinned Linux/Windows canonical CI.
+Versions affected authority/integration protocols for PR-only main content and
+separate human merge authorisation. Administrative rename preserves b2bf58a and
+existing tags. Enforcement is blocked by the private organisation Free plan; see
+[settings evidence](reports/github-flow-settings.md). No tasks are changed.
+Rollback uses a PR; historical setup coordinates in old sessions remain provenance.
+
+
 ## 2.0.0 — 2026-10-17 guided work and informed workflow changes
 
 Authority: [proposal #1](https://github.com/michi-guns/bad-dream/issues/1),

@@ -1,6 +1,6 @@
 # Start a session
 
-Protocol: `start-session` 1.1.0.
+Protocol: `start-session` 1.2.0.
 
 Inspect Git status, current branch and remotes before editing. Read the root
 agent entry, foundation, manifest and current state, then relevant workflows,
@@ -48,3 +48,8 @@ For guided brainstorming, discuss one question at a time and explain its purpose
 when useful. Supply context and examples without silently deciding for the operator.
 If the current surface lacks a required capability, explain the handoff and provide
 the next agent with the task, relevant revision, working method and pending outputs.
+
+Use [GitHub Flow](github-flow.md). Resolve main and the selected working branch
+separately; read open PRs and protection evidence. Recheck remote heads before
+administrative writes. Preserve an occupied checkout with an isolated worktree;
+announce its path/base. Never treat a working-branch file as integrated main.

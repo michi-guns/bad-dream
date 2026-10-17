@@ -1,10 +1,10 @@
 {
   "chapter_index": "studio/chapters/index.md",
-  "operating_version": "2.0.0",
+  "operating_version": "3.0.0",
   "protocols": {
     "foundation": {
       "path": "studio/foundation.md",
-      "version": "2.0.0"
+      "version": "3.0.0"
     },
     "knowledge-note": {
       "path": "studio/knowledge-note.md",
@@ -12,7 +12,7 @@
     },
     "start-session": {
       "path": "studio/workflows/start-session.md",
-      "version": "1.1.0"
+      "version": "1.2.0"
     },
     "refine-proposal": {
       "path": "studio/workflows/refine-proposal.md",
@@ -20,11 +20,11 @@
     },
     "triage-proposal": {
       "path": "studio/workflows/triage-proposal.md",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     "integrate-proposal": {
       "path": "studio/workflows/integrate-proposal.md",
-      "version": "1.1.0"
+      "version": "2.0.0"
     },
     "task-lifecycle": {
       "path": "studio/workflows/task-lifecycle.md",
@@ -32,11 +32,11 @@
     },
     "end-session": {
       "path": "studio/workflows/end-session.md",
-      "version": "1.0.0"
+      "version": "2.0.0"
     },
     "change-protocol": {
       "path": "studio/workflows/change-protocol.md",
-      "version": "2.0.0"
+      "version": "3.0.0"
     },
     "reconcile-context": {
       "path": "studio/workflows/reconcile-context.md",
@@ -48,6 +48,10 @@
     },
     "chapter-technology-experiments": {
       "path": "studio/chapters/technology-experiments.md",
+      "version": "1.0.0"
+    },
+    "github-flow": {
+      "path": "studio/workflows/github-flow.md",
       "version": "1.0.0"
     }
   },
