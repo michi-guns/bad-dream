@@ -4,7 +4,7 @@
   "protocols": {
     "foundation": {
       "path": "studio/foundation.md",
-      "version": "4.0.0"
+      "version": "4.1.0"
     },
     "knowledge-note": {
       "path": "studio/knowledge-note.md",
@@ -36,7 +36,7 @@
     },
     "change-protocol": {
       "path": "studio/workflows/change-protocol.md",
-      "version": "3.0.0"
+      "version": "3.1.0"
     },
     "reconcile-context": {
       "path": "studio/workflows/reconcile-context.md",

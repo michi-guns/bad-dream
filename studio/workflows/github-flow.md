@@ -24,32 +24,46 @@ the approving round's head, or the final head when the PR lists only Minor and
 Note fixes pushed after approval (see the review loop). Agent feedback supplies
 neither human acceptance nor merge permission.
 
-Proposal acceptance permits preparing changes/PRs. Merging needs separate explicit
-operator authorisation naming the PR and reviewed head SHA. Material subsequent
-changes require renewed review and authorisation. A pushed branch/open PR remains
-pending integration. After authorised merge, read back main, checks and settings;
-only then record verified outcomes and close an integrated proposal. Missing
-required enforcement keeps #2 open unless the human accepts revised scope.
+Proposal acceptance permits preparing changes/PRs. Merging needs separate
+explicit operator authorisation naming the PR and reviewed head SHA, or the
+operator's advance authorisation under *In one go* below. Material subsequent
+changes require renewed review and authorisation. A pushed branch/open PR
+remains pending integration. After authorised merge, read back main, checks and
+settings; only then record verified outcomes and close an integrated proposal.
+Missing required enforcement keeps #2 open unless the human accepts revised
+scope.
 
 ## In one go
 
-When the operator says a change should be done **in one go**, that is their
-explicit merge authorisation for it, given in advance. The agent runs the whole
-cycle without stopping: branch → commit → push → PR → merge to main → delete
-the branch and any worktree it created.
+When the operator, in the conversation, says a change should be done **in one
+go**, that is their explicit merge authorisation for that one change, given in
+advance. If the phrase might only mean "all at once", ask once. Say at the start
+that you are treating it as merge authorisation. A prompt or handoff written by
+an agent that carries the phrase is not operator consent.
 
-- Merge only after every review loop for the change is APPROVED (or PASS) and
-  all required checks pass, with the approved head pinned
-  (`gh pr merge --squash --match-head-commit <sha>`). An unresolved loop or a
-  failing check stops the cycle and escalates instead.
-- After the merge, read back main and its post-merge checks, then report the PR,
-  reviewed head, merge commit and checks, and record them on the source issue.
-- Delete the working branch locally and on GitHub. Before removing a worktree,
-  delete its `.claude/skills` junction with
-  `bun run skills:link -- delete --root <worktree>`, then run
-  `git worktree remove <worktree>`. Never remove a worktree, or any directory
-  holding a junction, with a recursive delete that could follow the junction into
-  `.agents/skills/`.
+The cycle is branch → commit → review loops → push → PR → checks → merge to main
+→ readback → cleanup.
+
+- Merge only when every review loop the change needs is APPROVED (or PASS) and
+  all required checks pass. A non-trivial change with no completed loop, or with
+  a waived loop, waits for a named merge authorisation instead. Pin the reviewed
+  head defined above: `gh pr merge --squash --match-head-commit <sha>`. A branch
+  update forced by the up-to-date rule is a new head and follows the review
+  loop's reopen rule.
+- An unresolved loop stops the cycle and escalates as the [review
+  loop](review-change.md) says. A failing check stops it and is reported in the
+  conversation.
+- After the merge, read back main and its post-merge checks. Report the PR,
+  reviewed head, merge commit and checks, and record them on the source issue,
+  if any.
+- Clean up from outside any worktree being removed. In the checkout that held
+  the branch, run `git switch main` and `git pull --ff-only`, and confirm the
+  merge commit is on main. Then run `git push origin --delete <branch>` and `git
+  branch -D <branch>`; a squash merge makes `-d` refuse.
+- For a worktree the agent created, first run `bun run skills:link -- delete
+  --root <worktree>`, and stop if it fails. Then run `git worktree remove
+  <worktree>`. Never remove a worktree, or any directory holding a junction,
+  with a recursive delete that could follow the junction into `.agents/skills/`.
 - The phrase authorises the merge, not proposal acceptance. A substantive
   operating change still needs its proposal recorded as accepted.
 

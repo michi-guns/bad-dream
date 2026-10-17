@@ -18,4 +18,4 @@
 
 <!-- Compatibility, operator/local setup actions, dependencies and rollback through a PR. -->
 
-Merge requires separate explicit operator authorisation naming this PR and its reviewed head SHA. Agent review is advisory. Keep source proposals open until required integration and verification are complete.
+Merge requires separate explicit operator authorisation naming this PR and its reviewed head SHA, or the operator's *In one go* instruction for this change. Agent review is advisory. Keep source proposals open until required integration and verification are complete.
