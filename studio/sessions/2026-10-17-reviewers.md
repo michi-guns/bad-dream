@@ -35,6 +35,8 @@ route to the review and has little space left. The `pushover-notify` skill is
 personal to the operator's machine. #7 stays open until this follow-up record is
 in main.
 
-Next action: 1. after this follow-up merges, the agent closes #7 with an
-integration comment; 2. confirm in a fresh Claude Code session that `/agents`
-lists all six reviewers. Then TASK-1 resumes.
+Next action: after this follow-up merges, the agent closes #7 with an
+integration comment (`gh issue close 7 --repo michi-guns/bad-dream --comment
+...`). Then, in a fresh Claude Code session, run `/agents` and confirm all six
+reviewers are listed. Then resume TASK-1 with `bun run backlog -- task view
+TASK-1 --plain`.

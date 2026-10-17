@@ -41,8 +41,8 @@ To Do and unstarted. No Backlog.md files were modified. Reconstruct its
 execution brief through the pinned CLI before eventual execution. No creative
 mechanic, engine or production scope is accepted.
 
-The communication guide is in main. The human still needs to paste [the current
-ChatGPT instructions](../chatgpt-project-instructions.md) into project settings.
+The human still needs to paste [the current ChatGPT
+instructions](../chatgpt-project-instructions.md) into project settings.
 Repository edits do not change app settings. Earlier setup checks remain in
 [setup verification](../reports/setup-verification.md).
 
