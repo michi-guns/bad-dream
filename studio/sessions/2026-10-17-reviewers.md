@@ -16,9 +16,9 @@ needed to align with main -> then new branch -> create PR with the changes".
 Earlier instructions in that session set the scope: reviewers modelled on
 another of their workspaces, a dedicated agent-context reviewer, a closed loop
 on every review type, three rounds for ordinary notes and session records, and
-high-priority Pushover escalation. The reviewer set, the five-round limit
-elsewhere and the operator waiver (review-change *When*) are agent suggestions
-within that scope. The acceptance and fingerprint are recorded on #7. The
+high-priority Pushover escalation. Agent suggestions within that scope: the
+reviewer set, the five-round limit for other records, and the operator waiver
+(review-change *When*). The acceptance and fingerprint are recorded on #7. The
 operator authorised the merge of PR #8 at its reviewed head `81b4279` ("merge PR
 #8 at 81b4279"); `aebfa6d` is the resulting squash commit.
 
