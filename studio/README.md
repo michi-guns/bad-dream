@@ -41,4 +41,4 @@ Codex and Claude Code share canonical skills through the
 Repository content follows [GitHub Flow](workflows/github-flow.md): working
 branches and PRs into main, independent advisory agent review, and separate
 human merge authorisation for a named PR/head SHA. See
-[settings evidence](reports/github-flow-settings.md) for enforcement blockers.
+[settings evidence](reports/github-flow-settings.md) for verified protection.

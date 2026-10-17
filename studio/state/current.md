@@ -5,9 +5,12 @@ Last reviewed: 2026-10-17.
 Current focus: prepare accepted operating proposals #2 revision 1, then #3
 revision 4. #2 files are on a working branch pending PR integration; no merge
 is authorised. Main is now the remote default at b2bf58a after the administrative
-rename; no direct content changes were made there. See
-[GitHub Flow](../workflows/github-flow.md) and
-[protection blocker/owner steps](../reports/github-flow-settings.md).
+rename; no direct content changes were made there. The operator made the
+repository public; main protection is now configured and verified by readback
+(PR + `Required checks` + up to date, admins enforced, no bypass, force push and
+deletion off). See [GitHub Flow](../workflows/github-flow.md) and
+[settings evidence](../reports/github-flow-settings.md). #3 is prepared in
+dependent PR #5, which must not merge before #4.
 
 The original checkout remains on setup/studio-foundation at 0d5cb38; it was
 clean and behind the remote. Implementation uses a separate worktree. Follow

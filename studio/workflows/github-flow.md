@@ -41,7 +41,8 @@ branches, administrator enforcement, no routine bypass, no force pushes and no
 deletion. Do not require another account's formal approval in this solo-account
 workflow: explicit human merge authorisation still applies. Record settings
 readback; policy text alone does not establish enforcement. See
-[settings evidence and owner steps](../reports/github-flow-settings.md).
+[settings evidence](../reports/github-flow-settings.md); re-read it after any
+visibility, plan or organisation change.
 
 ## Administrative transition and local migration
 

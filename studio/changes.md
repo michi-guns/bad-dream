@@ -6,8 +6,9 @@ Accepted #2 revision 1 and the supplemental simple acceptance-comment convention
 Adds github-flow 1.0.0, PR template and pinned Linux/Windows canonical CI.
 Versions affected authority/integration protocols for PR-only main content and
 separate human merge authorisation. Administrative rename preserves b2bf58a and
-existing tags. Enforcement is blocked by the private organisation Free plan; see
-[settings evidence](reports/github-flow-settings.md). No tasks are changed.
+existing tags. Enforcement was blocked while the repository was a private Free
+organisation repository; after the operator made it public, main protection was
+configured and verified by readback. See [settings evidence](reports/github-flow-settings.md). No tasks are changed.
 Rollback uses a PR; historical setup coordinates in old sessions remain provenance.
 
 
