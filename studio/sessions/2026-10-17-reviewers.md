@@ -28,6 +28,7 @@ was noticed; that checkout is left untouched. Codex cannot load
 The ChatGPT bootstrap does not route to the review and has little space left.
 The `pushover-notify` skill is personal to the operator's machine.
 
-Next action: the operator reviews the PR and decides whether to merge it,
-naming its reviewed head SHA; then open a fresh Claude Code session and confirm
-`/agents` lists all six.
+Next action: post the acceptance and fingerprint comments on #7 (pending
+permission) before merge authorisation. Then the operator reviews the PR and
+decides whether to merge it, naming its reviewed head SHA; afterwards open a
+fresh Claude Code session and confirm `/agents` lists all six.

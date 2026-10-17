@@ -13,13 +13,15 @@ Branch from freshly inspected main for one coherent change. Use lowercase
 omitted. Example: `ci/issue-2-repository-checks`. Inspect status/branch/remotes
 first; preserve local work. Use an isolated worktree if the checkout is occupied.
 
-PRs target main, link source proposals/tasks, and use the
-[PR template](../../.github/pull_request_template.md). Stacked work must declare
-its base/dependency, include only its scope, and be rebased/retargeted and reviewed
+PRs target main, link source proposals/tasks, and use the [PR
+template](../../.github/pull_request_template.md). Stacked work must declare its
+base/dependency, include only its scope, and be rebased/retargeted and reviewed
 again after the prerequisite merges. Obtain independent agent review through
-[the review loop](review-change.md), resolve
-findings or record concerns, and identify agent-generated feedback and reviewed
-head SHA. Agent feedback supplies neither human acceptance nor merge permission.
+[the review loop](review-change.md), resolve findings or record concerns, and
+identify agent-generated feedback and reviewed head SHA. The reviewed head is
+the approving round's head, or the final head when the PR lists only Minor and
+Note fixes pushed after approval (see the review loop). Agent feedback supplies
+neither human acceptance nor merge permission.
 
 Proposal acceptance permits preparing changes/PRs. Merging needs separate explicit
 operator authorisation naming the PR and reviewed head SHA. Material subsequent

@@ -14,9 +14,10 @@ is never proposal acceptance or merge authorisation.
 Every non-trivial change runs the full loop below with the reviewer its row
 names, before the gate its row names; no review type is optional. Non-trivial
 means it changes behaviour or meaning, or adds or changes a test. Typos,
-formatting and link fixes skip the loop. Explicit operator direction may waive
-a review or accept an unresolved change for merge; record the waiver and what
-stays unreviewed in the handoff and PR.
+formatting and link fixes skip the loop. Explicit operator direction may waive a
+review or let an unresolved change go forward for merge, which still needs
+separate merge authorisation; record the waiver and what stays unreviewed in the
+handoff and PR.
 
 | Change | Reviewer | Closed before | Rounds |
 | --- | --- | --- | --- |
@@ -30,11 +31,13 @@ stays unreviewed in the handoff and PR.
 
 Definitions live in `.claude/agents/`. A tool that cannot load them (Codex,
 ChatGPT) passes the definition's body as a fresh subagent's or session's brief.
-When no fresh session is available, the change may be pushed marked not reviewed
-in the handoff and the PR; the next session that can review owes the loop before
-it is relied on, published, triaged or put to the operator for merge. A change
-that spans two rows, such as the authority table in `studio/README.md`, gets
-both reviewers in the same round.
+The frontmatter does not carry over there: the brief runs with that tool's own
+model and permissions, so the body's read-only rules are what bind it. When no
+fresh session is available, the change may be pushed marked not reviewed in the
+handoff and the PR; the next session that can review owes the loop before it is
+relied on, published, triaged or put to the operator for merge. A change that
+spans two rows, such as the authority table in `studio/README.md`, gets both
+reviewers in the same round.
 
 ## The loop
 
@@ -88,11 +91,9 @@ not part of this repository.
 In the PR's Verification section: the number of rounds per loop, each verdict,
 every Blocking and Material finding with what was done, every declined Minor
 with why, the final gate results, and each approving round's head SHA. List any
-Minor and Note fixes pushed after approval; the operator's merge authorisation
-names the final head, which is that reviewed head plus those listed fixes.
-Record the same briefly in the session handoff. "Reviewed, APPROVED in round 2
-at <SHA>" is a valid summary; "reviewed" alone is not. Agent review stays
-advisory.
+Minor and Note fixes pushed after approval. Record the same briefly in the
+session handoff. "Reviewed, APPROVED in round 2 at <SHA>" is a valid summary;
+"reviewed" alone is not. Agent review stays advisory.
 
 ## What the reviewer never does
 
