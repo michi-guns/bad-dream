@@ -28,7 +28,8 @@ and #7 is closed with its integration record. Claude Code loaded the six
 reviewers and ran them as agent types; to check them, ask Claude which subagents
 it can use (the `/agents` wizard no longer exists). Saying **in one go** now
 authorises the full GitHub Flow cycle through merge and cleanup; see [GitHub
-Flow](../workflows/github-flow.md) and #10. See [the reviewers
+Flow](../workflows/github-flow.md), #10 and [the in-one-go
+record](../sessions/2026-10-17-in-one-go.md). See [the reviewers
 record](../sessions/2026-10-17-reviewers.md).
 
 The original local checkout is now on main; its superseded draft commits are

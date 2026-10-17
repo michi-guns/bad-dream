@@ -24,8 +24,8 @@ operator authorised the merge of PR #8 at its reviewed head `81b4279` ("merge PR
 
 Verified: `bun run verify` and `bun test` (12 pass) after every round's fixes;
 PR #8's checks and the post-merge checks on main passed. Review loops: protocol
-APPROVED in round 3, agent context in round 2, the original record in round 2
-(this follow-up has its own review); PR #8 lists each approving head.
+APPROVED in round 3, agent context in round 2, the original record in round 2;
+PR #8 lists each approving head.
 
 Open: the first draft (commits `e279b5a`, `b1eebdb`, never pushed) is kept on
 the local branch `archive/local-reviewers-draft`; the original checkout is now
@@ -34,7 +34,6 @@ fresh subagent's brief. The ChatGPT bootstrap does not route to the review and
 has little space left. The `pushover-notify` skill is personal to the operator's
 machine.
 
-Next action: none for #7, which is closed. Claude Code loaded and ran the six
-reviewers as agent types (the `/agents` wizard no longer exists; ask Claude
-which subagents it can use). Project work resumes with `bun run backlog -- task
+Next action: none for #7, which is closed; Claude Code loaded and ran the six
+reviewers as agent types. Project work resumes with `bun run backlog -- task
 view TASK-1 --plain`.
