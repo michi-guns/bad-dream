@@ -19,10 +19,12 @@ Verified: `bun run verify` and `bun test` on main at `439bd9b`; every merged
 PR's checks and post-merge checks passed. Claude Code loaded and ran the six
 reviewers as agent types.
 
-Open: proposals #2 (GitHub Flow) and #3 (response guidance), from an earlier
-session, stay open until their final integration records are written; see
-[current state](../state/current.md). TASK-1 is To Do and unstarted; the
-operator assigns its owner and chooses the first question.
+Open: proposals [#2](https://github.com/michi-guns/bad-dream/issues/2) (GitHub
+Flow) and [#3](https://github.com/michi-guns/bad-dream/issues/3) (response
+guidance), from an earlier session, stay open until their final integration
+records are written; see [current state](../state/current.md). TASK-1 is To Do
+and unstarted; the operator assigns its owner and chooses the first question.
 
-Next action: in a new session, start TASK-1 (review the creative brief and
-choose the first question) with `bun run backlog -- task view TASK-1 --plain`.
+Next action: in a new session, ask the operator to assign TASK-1's owner, then
+start it (review the creative brief and choose the first question) with `bun run
+backlog -- task view TASK-1 --plain`.
