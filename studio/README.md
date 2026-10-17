@@ -37,3 +37,6 @@ Tool setup is documented for [Obsidian](tools/obsidian.md) and
 [Backlog.md](tools/backlog-md.md).
 Codex and Claude Code share canonical skills through the
 [Windows skill junction manager](../scripts/skill-junction/README.md).
+
+Read [how to communicate with the human](communication.md): use plain language,
+restore context before asking for decisions, and keep technical detail readable.

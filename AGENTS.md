@@ -31,3 +31,7 @@ If a request appears to misremember a workflow, cite and explain the established
 rule first. After an informed insistence, record a permanent amendment or bounded
 exception under [protocol changes](studio/workflows/change-protocol.md). Do not
 repeat approval requests for clear informed instructions.
+
+Read [the communication guide](studio/communication.md) before writing for the
+human. Explain the situation and next decision in plain language; put necessary
+technical details after the practical explanation.
