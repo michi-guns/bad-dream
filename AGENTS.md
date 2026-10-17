@@ -35,3 +35,9 @@ repeat approval requests for clear informed instructions.
 Use [GitHub Flow](studio/workflows/github-flow.md): main is primary; content
 changes use working branches/PRs. Acceptance is not merge permission. Report
 reviewed head SHA, checks and enforcement blockers; agent review is advisory.
+
+Follow [response guidance](studio/workflows/response-guidance.md): useful stable
+stage headers (simple label by default), evidence-based progress, and brief bullet
+**Recap** plus **Recommendation(s)** in every user-visible response, including
+updates and clarifications. On Chat ↔ Local Agent transitions, explicitly name
+the destination/reason and provide a complete paste-ready receiving-agent prompt.

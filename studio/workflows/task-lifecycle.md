@@ -1,6 +1,6 @@
 # Task lifecycle
 
-Protocol: `task-lifecycle` 2.0.0.
+Protocol: `task-lifecycle` 3.0.0.
 
 Use `bun run backlog -- instructions overview` and the relevant creation,
 execution or finalization guide. The wrapper checks the pinned binary version
@@ -67,3 +67,18 @@ preserves IDs and links; restore before editing. An archived unfinished task is
 not a satisfied prerequisite. `task complete` is removed. Permanent deletion
 releases identity and has no second confirmation: do not use it for routine cleanup.
 Never run `doctor --fix` on real records as a routine step.
+
+## Ongoing visibility and surface transitions
+
+Follow [response guidance](response-guidance.md). The brief identifies its
+applicable workflow and stable stage names. Display a useful header at substantive
+start/resumption, stage changes or orientation requests; use a simple label by
+default. Do not rename stages per reply. Other work types use their documented
+stages. Count actual decisions/outcomes only, with meaningful totals; explain
+reopened outcomes or changed totals and separate counters. Never imply acceptance
+or integration. Every reply includes brief bullet Recap and Recommendation(s).
+When moving Chat ↔ Local Agent, announce destination/reason and supply a complete
+prompt carrying context, scope/status, sources/revisions, next actions, expected
+outputs/verification and approval boundaries. Use [handoff](../templates/handoff.md).
+Legacy briefs gain these details when next worked, through the pinned CLI; no
+bulk task migration or implied execution is required.

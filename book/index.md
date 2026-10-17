@@ -19,3 +19,5 @@ operations when there is content to organise. A roadmap should produce reviewed
 task candidates, not automatically schedule every idea.
 
 Operating decisions: [GitHub Flow](notes/github-flow.md).
+
+Operating visibility: [response guidance](notes/response-guidance.md).

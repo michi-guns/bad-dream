@@ -1,5 +1,17 @@
 # Operating protocol history
 
+## 4.0.0 — 2026-10-17 response guidance (pending integration)
+
+Accepted #3 revision 4 extends #1 with response-guidance 1.0.0: stable useful stage
+labels (simple by default), truthful counts, every-response recaps/recommendations
+and complete bidirectional handoff prompts. Updates foundation, startup, task
+lifecycle, end-session, agent/bootstrap and templates. This branch depends on #2
+PR #4; both remain unmerged. Historical header rules remain in issue revisions;
+revision 4 governs. No task files/status or creative scope changes. See
+[decision](../book/notes/response-guidance.md) and
+[verification](reports/response-guidance-verification.md). Rollback through a PR.
+
+
 ## 3.0.0 — 2026-10-17 GitHub Flow (pending integration)
 
 Accepted #2 revision 1 and the supplemental simple acceptance-comment convention.

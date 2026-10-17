@@ -1,6 +1,6 @@
 # Foundation
 
-Protocol: `foundation` 3.0.0. Initial authority: the operator's 2026-10-17
+Protocol: `foundation` 4.0.0. Initial authority: the operator's 2026-10-17
 setup request and supplied revision-2 setup brief. This authority establishes
 the operating foundation without inventing a proposal or human acceptance event.
 
@@ -76,3 +76,9 @@ scope permits preparing branches/PRs; integration requires separate explicit
 human merge authorisation naming the PR and reviewed head SHA, then merge and
 readback. Agents cannot supply human acceptance or merge permission. Missing
 required protection enforcement remains an explicit blocker.
+
+[Response guidance](workflows/response-guidance.md) governs ongoing visibility:
+use stable stage labels at useful orientation points, evidence-based counts,
+brief bullet Recap and next-action Recommendation(s) in every response, and
+explicit two-way surface handoffs with complete prompts. Never imply human
+decisions or repository integration from conversational progress.
