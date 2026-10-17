@@ -31,3 +31,7 @@ If a request appears to misremember a workflow, cite and explain the established
 rule first. After an informed insistence, record a permanent amendment or bounded
 exception under [protocol changes](studio/workflows/change-protocol.md). Do not
 repeat approval requests for clear informed instructions.
+
+Use [GitHub Flow](studio/workflows/github-flow.md): main is primary; content
+changes use working branches/PRs. Acceptance is not merge permission. Report
+reviewed head SHA, checks and enforcement blockers; agent review is advisory.

@@ -1,6 +1,6 @@
 # Triage a proposal
 
-Protocol: `triage-proposal` 1.0.0. Apply [reconciliation](reconcile-context.md).
+Protocol: `triage-proposal` 1.1.0. Apply [reconciliation](reconcile-context.md).
 
 The operator accepts, rejects, defers or requests changes. The agent cannot
 accept its own recommendation. Establish authorised reviewers from explicit
@@ -24,3 +24,10 @@ An investigation acceptance does not accept the feature it might discover.
 After acceptance, follow [integration](integrate-proposal.md). Use one lifecycle
 label (`status:proposed`, `status:accepted`, `status:deferred`, `status:rejected`,
 `status:integrated`) when available and helpful. Never erase unrelated labels.
+
+The simple human approval comment is `Accepted: revision N`. Agents handle
+supporting provenance (identity/date/context, scope, exact revision/body SHA-256)
+without demanding a longer human comment or approval scripts/parser. Agent
+recordings must identify themselves truthfully. Read later acceptance comments:
+an unchanged proposal snapshot may still say proposed. Acceptance does not grant
+merge authority; use [GitHub Flow](github-flow.md).
