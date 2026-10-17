@@ -12,10 +12,11 @@ protocol_revision: 4986c99b92939c9b5e098a1ac474e32feda281f8
 
 # Useful visibility and complete handoffs
 
-Accepted, prepared on a working branch, **not integrated**. Extends
-[guided task execution](guided-task-execution.md); depends on
-[GitHub Flow](github-flow.md). Prerequisite PR #4 has merged; this response
-guidance still awaits its own checks, review and separate merge authorisation.
+Accepted and added to main through [PR #5](https://github.com/michi-guns/bad-dream/pull/5),
+squash commit `2112dcc8dc838de0aeec783363e1696e97af0f0e`; post-merge checks passed.
+Extends [guided task execution](guided-task-execution.md) and
+[GitHub Flow](github-flow.md). The additional plain-language guide remains
+pending in PR #6. Issue #3 remains open for its final integration record.
 
 ## Provenance and revision history
 

@@ -1,13 +1,23 @@
 # Operating protocol history
 
-## 4.0.0 — 2026-10-17 response guidance (pending integration)
+## 2026-10-17 plain-language communication guide (pending)
+
+Direct operator request adds studio/communication.md and links from the agent
+entry/studio guide. It explains the situation and next decision in everyday
+words, with technical details kept exact and placed after the practical point.
+The guide clarifies existing communication expectations; no approval or merge
+rule changes. PR #6 remains unmerged. See
+[the session record](sessions/2026-10-17-plain-language.md).
+
+## 4.0.0 — 2026-10-17 response guidance (merged; final records pending)
 
 Accepted #3 revision 4 extends #1 with response-guidance 1.0.0: stable useful stage
 labels (simple by default), truthful counts, every-response recaps/recommendations
 and complete bidirectional handoff prompts. Updates foundation, startup, task
 lifecycle, end-session, agent/bootstrap and templates. Prerequisite #2
-PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3; #3 remains
-unmerged and is reconciled with that main revision. Historical header rules remain in issue revisions;
+PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3. PR #5 then merged
+at 2112dcc8dc838de0aeec783363e1696e97af0f0e; its post-merge checks passed.
+Final issue records and the additional communication guide remain pending. Historical header rules remain in issue revisions;
 revision 4 governs. No task files/status or creative scope changes. See
 [decision](../book/notes/response-guidance.md) and
 [verification](reports/response-guidance-verification.md). Rollback through a PR.

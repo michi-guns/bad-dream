@@ -46,3 +46,6 @@ human merge authorisation for a named PR/head SHA. See
 Use [response guidance](workflows/response-guidance.md) for useful stable stage
 labels, truthful progress, brief recaps/recommendations in every response and
 explicit Chat ↔ Local Agent prompts. Acceptance is distinct from integration.
+
+Read [how to communicate with the human](communication.md): use plain language,
+restore context before asking for decisions, and keep technical detail readable.

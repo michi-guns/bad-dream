@@ -41,3 +41,7 @@ stage headers (simple label by default), evidence-based progress, and brief bull
 **Recap** plus **Recommendation(s)** in every user-visible response, including
 updates and clarifications. On Chat ↔ Local Agent transitions, explicitly name
 the destination/reason and provide a complete paste-ready receiving-agent prompt.
+
+Read [the communication guide](studio/communication.md) before writing for the
+human. Explain the situation and next decision in plain language; put necessary
+technical details after the practical explanation.
