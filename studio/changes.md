@@ -13,6 +13,6 @@ No creative mechanic, engine or AI provider is chosen.
 
 `bootstrap` resolves to the annotated local immutable tag `studio-v1.0.0`,
 created after initial protocol commit `68e4708`. The tag resolves the exact
-protocol baseline; never move it. It has not been pushed. Resolve full snapshot
+protocol baseline; never move it. It has been pushed to the private remote. Resolve full snapshot
 SHAs externally through Git. Later repository-coordinate and verification edits
 do not change the meaning of this tagged protocol snapshot.

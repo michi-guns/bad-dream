@@ -2,4 +2,4 @@ repository: michi-guns/bad-dream
 branch: setup/studio-foundation
 book_root: book
 backlog_root: backlog
-remote_status: created-private
+remote_status: published-private

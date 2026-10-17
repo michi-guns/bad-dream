@@ -26,8 +26,11 @@ Working branch: `setup/studio-foundation`.
 The operator selected private `michi-guns/bad-dream` in the owner-choice reply.
 The remote was created and linked as `origin`, with issues enabled and reported
 admin/push/pull access. Companion repository and branch coordinates are filled;
-file validation passes. Initial branch/tag publication is being completed and
-remote readback will be recorded in the verification report.
+file validation passes. Branch and baseline tag were pushed successfully.
+Commit `33fe0ca` was verified against the remote branch SHA; the repository's
+default branch is `setup/studio-foundation`. This handoff update is a later commit.
+GitHub CLI's Git credential helper was configured to support future authenticated
+Git operations. No tokens are stored in the repository. No PR or merge occurred.
 
 Next project action: review TASK-1 and choose the first bounded learning question.
 Resume from the studio guide without consulting the original conversation.

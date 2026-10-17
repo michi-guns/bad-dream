@@ -6,11 +6,12 @@ Milestone: establish a recoverable studio workspace, then review the creative br
 Foundation, proposal workflows, chapter contracts, book navigation and three
 bootstrap research/review tasks are prepared. Creative concepts remain exploratory.
 
-Current focus: publishing the verified studio foundation, then reviewing the creative brief.
+Current focus: review the creative brief and choose the first bounded question.
 Local branch: `setup/studio-foundation`. Setup changes are committed locally.
 Repository: `michi-guns/bad-dream`, private, explicitly selected by the operator.
-The remote has been created and linked as `origin`; initial branch publication
-is being completed. No PR or merge has occurred.
+The remote is linked as `origin`; the setup branch and `studio-v1.0.0` baseline
+tag are published. GitHub's default branch is `setup/studio-foundation`.
+No PR or merge has occurred; this is the new repository's initial content.
 
 Remaining setup checks: Obsidian GUI navigation/backlinks; fresh-session Codex
 instruction loading and skill invocation behaviour; actual ChatGPT instruction-field

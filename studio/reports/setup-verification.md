@@ -43,6 +43,12 @@ Private machine paths and credentials are excluded from these records.
 - Fresh Codex app-server process, no model turn: `skills/list` with this checkout
   and `forceReload=true` returned `refine-proposal`, enabled, scope `repo`, errors
   empty. Process was stopped after the read. This verifies discovery, not model behaviour.
+- Private GitHub remote created at `michi-guns/bad-dream`; issues enabled, with
+  reported admin/push/pull permissions. Actual branch and annotated tag pushes
+  succeeded. Local and remote branch SHA matched at
+  `33fe0ca39de0f47f4c6bb29bdd01a47c10dd1647` before this verification-record update.
+  Default branch is `setup/studio-foundation`. GitHub CLI's credential helper was
+  configured for authenticated Git operations; no credential is committed.
 - Bun YAML validation of skill metadata passed. Companion instructions measure
   7,924 characters before coordinate replacement, below the conservative target.
 - Manual disposable refinement produced an unaccepted draft with rationale,
@@ -64,9 +70,6 @@ Private machine paths and credentials are excluded from these records.
 
 ## Pending / not run
 
-- Initial branch/tag push and remote readback are being completed. Repository
-  creation succeeded; metadata confirms private visibility, issues enabled and
-  reported admin/push/pull permissions. Authentication alone did not prove writes.
 - Obsidian GUI acceptance: open root vault, render book index and chapter links,
   inspect shared-note backlinks and task-to-note reference. File validation does
   not establish GUI rendering. Native UI automation is unavailable in this session.
@@ -106,8 +109,8 @@ remote limitation; proposal refinement drafts before publication; acceptance
 evidence is checked before integration. Old chat cannot silently approve a mechanic.
 
 Local preparation is reviewable on `setup/studio-foundation`. The selected private
-remote is `https://github.com/michi-guns/bad-dream`; initial branch/tag publication
-and remote readback are being completed. No PR or merge has occurred. The annotated
+remote is `https://github.com/michi-guns/bad-dream`; branch/tag publication
+and remote branch readback passed. No PR or merge has occurred. The annotated
 baseline tag and actual commit IDs are recorded through Git and protocol history.
 
 Initial foundation commit is `68e4708`; annotated tag `studio-v1.0.0` was created
