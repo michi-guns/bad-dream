@@ -4,6 +4,11 @@ These are disposable behavioural examples, not task execution, human decisions,
 proposal acceptance, or production task progress. They exercise accepted #3
 revision 4. TASK-1 remains unstarted.
 
+The quoted handoff prompts below preserve illustrative snapshots from earlier
+preparation, including the former private-repository blocker. They are not the
+current project state. PR #4 has since merged; use current state and settings
+evidence when preparing a real handoff.
+
 ## Brainstorming start and same-stage exchange
 
 > **Stage: Brainstorming**

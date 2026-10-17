@@ -1,5 +1,27 @@
 # Operating proposals handoff — 2026-10-17
 
+## Current update after PR #4 merged
+
+GitHub reports [PR #4](https://github.com/michi-guns/bad-dream/pull/4) merged
+through merge commit `1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3`.
+Its post-merge [CI run](https://github.com/michi-guns/bad-dream/actions/runs/39025055645)
+completed successfully. Main protection remains documented as verified in
+[settings evidence](../reports/github-flow-settings.md). The earlier plan blocker
+is resolved; the notes below preserve the sequence of preparation.
+
+PR #5 is being updated to include current main and resolve conflicts without
+losing response guidance or the verified protection evidence. Its old checks and
+review apply to its old head; fresh checks and independent review are required
+for this update. No merge of #5 or #6 is authorised. Both issues remain open;
+TASK-1 and game work remain unstarted. PR #6 is the separate plain-language guide
+and must be reconciled after #5. Automatic template population remains pending.
+
+Local conflict/link/metadata validation uses the unchanged repository checker
+under Node with a PyYAML adapter because Bun is unavailable here. Canonical
+Linux/Windows checks and review are tracked on the updated PR, not invented here.
+
+## Earlier preparation notes (historical)
+
 Accepted: #2 revision 1 and #3 revision 4; provenance is in their comments.
 No merge is authorised; both issues remain open. This branch prepares #2 first.
 
@@ -10,7 +32,7 @@ remain intact. See [workflow](../workflows/github-flow.md) for local migration.
 Prepared: GitHub Flow, PR template, Linux/Windows canonical CI, coordinates,
 protocol versions, simple acceptance convention and offline rationale. No task
 changes are justified; TASK-1 remains unstarted. See
-[settings evidence](../reports/github-flow-settings.md) for the plan blocker.
+[settings evidence](../reports/github-flow-settings.md) for protection history.
 
 Verification and PR/review results will be appended when observed. Automatic
 template population and main-push confirmation require a later authorised merge.
@@ -60,3 +82,10 @@ Review PR #4 first. After authorised integration, verify automatic template
 population with a subsequent PR and main-push checks. Paste the updated ChatGPT
 bootstrap manually (under 8,000 characters; app field acceptance still pending),
 and migrate the original checkout deliberately using GitHub Flow guidance.
+
+Protection follow-up: the operator made the repository public. Authenticated
+admin CLI then applied main protection (HTTP 200) and REST/GraphQL readback
+verified PR-only changes, `Required checks` (GitHub Actions), up-to-date
+branches, admin enforcement, no bypass allowances, and force push/deletion
+disabled. No direct main push test was made. #4 evidence was refreshed; #5 is
+reconciled after #4 merges. Merge still needs separate human authorisation.

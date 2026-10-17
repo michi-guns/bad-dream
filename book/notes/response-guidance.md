@@ -14,7 +14,8 @@ protocol_revision: 4986c99b92939c9b5e098a1ac474e32feda281f8
 
 Accepted, prepared on a working branch, **not integrated**. Extends
 [guided task execution](guided-task-execution.md); depends on
-[GitHub Flow](github-flow.md) and PR #4 for repository integration.
+[GitHub Flow](github-flow.md). Prerequisite PR #4 has merged; this response
+guidance still awaits its own checks, review and separate merge authorisation.
 
 ## Provenance and revision history
 

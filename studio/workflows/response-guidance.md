@@ -9,8 +9,10 @@ Extends [guided task execution](task-lifecycle.md), preserving its opening conte
 Print a stage header at the start/resumption of substantive work, when its stage
 changes, or when the human asks where we are. Omit it for ordinary questions,
 clarifications, acknowledgements and repeated exchanges within the same stage.
-Default to **Stage: Proposal review**. Short arrow chains are optional when they
-help, with the current stage bold and optional emoji; link the complete workflow
+Default to a simple **Stage: [current stage]** label; for example,
+**Stage: Proposal review** while a proposal awaits a human decision. Short arrow
+chains are optional when useful, with the current stage bold and optional emoji;
+link the complete workflow
 through the working method. Headers locate current work, not a proposed action list.
 
 Use these stable values for the proposal-to-integration flow:

@@ -41,7 +41,8 @@ branches, administrator enforcement, no routine bypass, no force pushes and no
 deletion. Do not require another account's formal approval in this solo-account
 workflow: explicit human merge authorisation still applies. Record settings
 readback; policy text alone does not establish enforcement. See
-[settings evidence and owner steps](../reports/github-flow-settings.md).
+[settings evidence](../reports/github-flow-settings.md); re-read it after any
+visibility, plan or organisation change.
 
 ## Administrative transition and local migration
 
@@ -72,9 +73,9 @@ If main already exists or work diverges, reconcile explicitly; do not overwrite
 or reset. These are operator guidance, not commands silently applied to the
 original checkout. New clones use main. Paste the updated
 [ChatGPT instructions](../chatgpt-project-instructions.md) into project settings;
-repository edits do not change app settings. Until the PR merges, main still
-contains the previous bootstrap: identify this pending PR when reviewing it.
+repository edits do not change app settings. When reviewing a pending PR, distinguish its proposed files from the instructions
+already in main.
 
-After #2 merges, verify automatic template population with a subsequent PR;
+Verify automatic template population with a later PR after the template reaches main;
 the bootstrap PR manually follows it. Rollback uses a reviewed revert/corrective
 PR; do not move tags or silently reverse the administrative transition.

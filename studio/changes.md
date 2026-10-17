@@ -5,22 +5,26 @@
 Accepted #3 revision 4 extends #1 with response-guidance 1.0.0: stable useful stage
 labels (simple by default), truthful counts, every-response recaps/recommendations
 and complete bidirectional handoff prompts. Updates foundation, startup, task
-lifecycle, end-session, agent/bootstrap and templates. This branch depends on #2
-PR #4; both remain unmerged. Historical header rules remain in issue revisions;
+lifecycle, end-session, agent/bootstrap and templates. Prerequisite #2
+PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3; #3 remains
+unmerged and is reconciled with that main revision. Historical header rules remain in issue revisions;
 revision 4 governs. No task files/status or creative scope changes. See
 [decision](../book/notes/response-guidance.md) and
 [verification](reports/response-guidance-verification.md). Rollback through a PR.
 
 
-## 3.0.0 — 2026-10-17 GitHub Flow (pending integration)
+## 3.0.0 — 2026-10-17 GitHub Flow (merged; follow-up verification pending)
 
 Accepted #2 revision 1 and the supplemental simple acceptance-comment convention.
 Adds github-flow 1.0.0, PR template and pinned Linux/Windows canonical CI.
 Versions affected authority/integration protocols for PR-only main content and
 separate human merge authorisation. Administrative rename preserves b2bf58a and
-existing tags. Enforcement is blocked by the private organisation Free plan; see
-[settings evidence](reports/github-flow-settings.md). No tasks are changed.
-Rollback uses a PR; historical setup coordinates in old sessions remain provenance.
+existing tags. Enforcement was blocked while the repository was a private Free
+organisation repository; after the operator made it public, main protection was
+configured and verified by readback. See [settings evidence](reports/github-flow-settings.md). No tasks are changed.
+PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3; post-merge
+CI passed. Automatic template population and final issue disposition remain
+pending. Rollback uses a PR; historical setup coordinates remain provenance.
 
 
 ## 2.0.0 — 2026-10-17 guided work and informed workflow changes

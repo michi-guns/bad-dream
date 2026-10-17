@@ -14,7 +14,10 @@ protocol_revision: b2bf58aec9e5a5cd11107d6f27b80e27f7b918a1
 
 Accepted scope: main, PR-only content, branch/PR conventions, canonical
 Linux/Windows CI, verified protections and the one-time administrative rename.
-Implementation is prepared, **not integrated**; protection enforcement is blocked.
+The implementation merged through [PR #4](https://github.com/michi-guns/bad-dream/pull/4)
+at `1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3`. Post-merge CI passed; automatic
+PR-template verification and final issue disposition remain pending. Main
+protection is configured and verified by readback on the public repository.
 
 Acceptance: Jimzord (connected account jimzord12), 2026-10-17, explicit chat
 instruction “I accept them all”, recorded truthfully by an agent in
@@ -41,8 +44,9 @@ Use [the workflow](../../studio/workflows/github-flow.md) for exact naming,
 merge gates, local migration, template/CI and rollback. All file changes,
 including rollback records, use PRs. Preserve original protocol history and tags.
 [Settings evidence](../../studio/reports/github-flow-settings.md) records the
-Free-plan blocker and owner actions. Do not claim protection enforcement, close
-#2, purchase upgrades or change visibility. Reconsider scope only by an explicit
-human decision if plan constraints persist or the minimal process obstructs work.
+earlier Free-plan blocker while private and the verified public-state settings.
+Agents must not close #2 before merge verification, purchase upgrades, change
+visibility or bypass protections. Reconsider by explicit human decision if
+visibility/plan changes remove enforcement or the minimal process obstructs work.
 No game tasks are created; these bounded operating changes are tracked by their
 existing proposal and PR. TASK-1 remains unstarted.
