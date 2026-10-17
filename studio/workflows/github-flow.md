@@ -1,7 +1,8 @@
 # GitHub Flow
 
-Protocol: `github-flow` 1.0.1. Authority: accepted proposal
-[#2 revision 1](https://github.com/michi-guns/bad-dream/issues/2#issuecomment-6232010324).
+Protocol: `github-flow` 1.1.0. Authority: accepted proposal
+[#2 revision 1](https://github.com/michi-guns/bad-dream/issues/2#issuecomment-6232010324);
+the *In one go* shorthand: [#10 revision 1](https://github.com/michi-guns/bad-dream/issues/10#issuecomment-6235049973).
 
 `main` is the default and authoritative integrated state. Every content change,
 including protocol records and rollback, uses a short-lived branch and PR. Never
@@ -29,6 +30,28 @@ changes require renewed review and authorisation. A pushed branch/open PR remain
 pending integration. After authorised merge, read back main, checks and settings;
 only then record verified outcomes and close an integrated proposal. Missing
 required enforcement keeps #2 open unless the human accepts revised scope.
+
+## In one go
+
+When the operator says a change should be done **in one go**, that is their
+explicit merge authorisation for it, given in advance. The agent runs the whole
+cycle without stopping: branch → commit → push → PR → merge to main → delete
+the branch and any worktree it created.
+
+- Merge only after every review loop for the change is APPROVED (or PASS) and
+  all required checks pass, with the approved head pinned
+  (`gh pr merge --squash --match-head-commit <sha>`). An unresolved loop or a
+  failing check stops the cycle and escalates instead.
+- After the merge, read back main and its post-merge checks, then report the PR,
+  reviewed head, merge commit and checks, and record them on the source issue.
+- Delete the working branch locally and on GitHub. Before removing a worktree,
+  delete its `.claude/skills` junction with
+  `bun run skills:link -- delete --root <worktree>`, then run
+  `git worktree remove <worktree>`. Never remove a worktree, or any directory
+  holding a junction, with a recursive delete that could follow the junction into
+  `.agents/skills/`.
+- The phrase authorises the merge, not proposal acceptance. A substantive
+  operating change still needs its proposal recorded as accepted.
 
 ## Canonical checks and enforcement
 

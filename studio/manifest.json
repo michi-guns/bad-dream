@@ -1,6 +1,6 @@
 {
   "chapter_index": "studio/chapters/index.md",
-  "operating_version": "4.1.0",
+  "operating_version": "4.2.0",
   "protocols": {
     "foundation": {
       "path": "studio/foundation.md",
@@ -52,7 +52,7 @@
     },
     "github-flow": {
       "path": "studio/workflows/github-flow.md",
-      "version": "1.0.1"
+      "version": "1.1.0"
     },
     "response-guidance": {
       "path": "studio/workflows/response-guidance.md",

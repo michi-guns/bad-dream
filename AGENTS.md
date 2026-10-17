@@ -37,6 +37,7 @@ repeat approval requests for clear informed instructions.
 Use [GitHub Flow](studio/workflows/github-flow.md): main is primary; content
 changes use working branches/PRs. Acceptance is not merge permission. Report
 reviewed head SHA, checks and enforcement blockers; agent review is advisory.
+"In one go" authorises the full cycle through merge and cleanup; see its section.
 
 Follow [response guidance](studio/workflows/response-guidance.md): useful stable
 stage headers (simple label by default), evidence-based progress, and brief bullet

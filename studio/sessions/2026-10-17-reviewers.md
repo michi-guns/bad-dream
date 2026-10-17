@@ -27,16 +27,14 @@ PR #8's checks and the post-merge checks on main passed. Review loops: protocol
 APPROVED in round 3, agent context in round 2, the original record in round 2
 (this follow-up has its own review); PR #8 lists each approving head.
 
-Open: the original checkout's `setup/studio-foundation` branch still holds the
-first draft (commits `e279b5a`, `b1eebdb`, never pushed), superseded by this
-branch and left untouched. Codex cannot load `.claude/agents/` and passes a
-definition's body as a fresh subagent's brief. The ChatGPT bootstrap does not
-route to the review and has little space left. The `pushover-notify` skill is
-personal to the operator's machine. #7 stays open until this follow-up record is
-in main.
+Open: the first draft (commits `e279b5a`, `b1eebdb`, never pushed) is kept on
+the local branch `archive/local-reviewers-draft`; the original checkout is now
+on main. Codex cannot load `.claude/agents/` and passes a definition's body as a
+fresh subagent's brief. The ChatGPT bootstrap does not route to the review and
+has little space left. The `pushover-notify` skill is personal to the operator's
+machine.
 
-Next action: after this follow-up merges, the agent closes #7 with an
-integration comment (`gh issue close 7 --repo michi-guns/bad-dream --comment
-...`). Then, in a fresh Claude Code session, run `/agents` and confirm all six
-reviewers are listed. Then resume TASK-1 with `bun run backlog -- task view
-TASK-1 --plain`.
+Next action: none for #7, which is closed. Claude Code loaded and ran the six
+reviewers as agent types (the `/agents` wizard no longer exists; ask Claude
+which subagents it can use). Project work resumes with `bun run backlog -- task
+view TASK-1 --plain`.
