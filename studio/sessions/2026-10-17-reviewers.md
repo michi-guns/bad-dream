@@ -2,34 +2,38 @@
 
 Changed: six read-only reviewer subagents under `.claude/agents/` — code,
 protocol, agent-context, proposal, knowledge and resumability — and the closed
-[review loop](../workflows/review-change.md) they run in. `refine-proposal`
-1.1.0, `end-session` 3.1.0, `integrate-proposal` 2.0.1 and `github-flow` 1.0.1
-point at it (github-flow also defines the reviewed head); operating version
-4.1.0; see [history](../changes.md). Pointers in `AGENTS.md` and the [studio
-guide](../README.md). Prepared on branch `docs/issue-7-review-loop` from main at
-`d5e2f79`; not merged.
+[review loop](../workflows/review-change.md) they run in, with pointers from
+`AGENTS.md`, the [studio guide](../README.md) and four workflows; versions are
+in [history](../changes.md). Committed on branch `docs/issue-7-review-loop`
+(from main at `d5e2f79`) in a separate worktree, `bad-dream-review-loop`, beside
+the original checkout. Not yet pushed; no PR yet; not merged.
 
 Decisions: proposal [#7](https://github.com/michi-guns/bad-dream/issues/7)
-revision 1, accepted through the operator's explicit instructions in a local
-Claude Code session: reviewers modelled on another of their workspaces, a
-dedicated agent-context reviewer, a closed loop on every review type, three
-rounds for ordinary notes and session records, high-priority Pushover escalation
-of an unresolved loop. The reviewer set, the five-round limit elsewhere and the
-operator waiver (review-change *When*) are agent suggestions within that scope.
-Merging is a separate operator decision. The acceptance and fingerprint comments
-on #7 were blocked by a permission check and are pending.
+revision 1. The operator accepted it in a local Claude Code session after the
+agent explained main's proposal and PR rules: "yes, go ahead … do whatever is
+needed to align with main -> then new branch -> create PR with the changes".
+Earlier instructions in that session set the scope: reviewers modelled on
+another of their workspaces, a dedicated agent-context reviewer, a closed loop
+on every review type, three rounds for ordinary notes and session records, and
+high-priority Pushover escalation. The reviewer set, the five-round limit
+elsewhere and the operator waiver (review-change *When*) are agent suggestions
+within that scope. The acceptance is not yet recorded on #7: the comment was
+blocked by a permission check. Merging is a separate operator decision.
 
-Verified: `bun run verify` and `bun test` passed locally; CI results and the
-review outcomes for this branch are reported in its PR.
+Verified: `bun run verify` and `bun test` (12 pass) after every round's fixes.
+Review loops: protocol APPROVED in round 3, agent context APPROVED in round 2;
+this record's own review is the last loop. Each approving head SHA and the
+final head are listed in the PR.
 
-Open: the files were first prepared on the stale local `setup/studio-foundation`
-checkout (commits `e279b5a`, `b1eebdb`, never pushed) before main's GitHub Flow
-was noticed; that checkout is left untouched. Codex cannot load
-`.claude/agents/` and passes a definition's body as a fresh subagent's brief.
-The ChatGPT bootstrap does not route to the review and has little space left.
-The `pushover-notify` skill is personal to the operator's machine.
+Open: the original checkout's `setup/studio-foundation` branch still holds the
+first draft (commits `e279b5a`, `b1eebdb`, never pushed), superseded by this
+branch and left untouched. Codex cannot load `.claude/agents/` and passes a
+definition's body as a fresh subagent's brief. The ChatGPT bootstrap does not
+route to the review and has little space left. The `pushover-notify` skill is
+personal to the operator's machine.
 
-Next action: post the acceptance and fingerprint comments on #7 (pending
-permission) before merge authorisation. Then the operator reviews the PR and
-decides whether to merge it, naming its reviewed head SHA; afterwards open a
-fresh Claude Code session and confirm `/agents` lists all six.
+Next action: once the operator allows it, the agent posts the acceptance and
+fingerprint comments on #7, pushes the branch and opens the PR.
+
+After merge: confirm in a fresh Claude Code session that `/agents` lists all
+six reviewers.
