@@ -30,3 +30,5 @@ in the book so it remains understandable offline.
 Templates in [the template index](templates/index.md) are starting points.
 Tool setup is documented for [Obsidian](tools/obsidian.md) and
 [Backlog.md](tools/backlog-md.md).
+Codex and Claude Code share canonical skills through the
+[Windows skill junction manager](../scripts/skill-junction/README.md).

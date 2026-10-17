@@ -30,3 +30,8 @@ into ChatGPT project instructions. Repository and branch coordinates are filled.
 The [verification report](studio/reports/setup-verification.md) distinguishes
 verified results from pending checks. The [tool policy](studio/tools/backlog-md.md)
 explains the exact pin and upgrade process.
+
+For Claude Code, run `bun run skills:link` once in each Windows checkout.
+[CLAUDE.md](CLAUDE.md) imports the shared agent instructions; the
+[junction manager guide](scripts/skill-junction/README.md) explains how both tools
+use the same skills under `.agents/skills/`.

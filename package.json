@@ -4,6 +4,7 @@
   "scripts": {
     "backlog": "bun scripts/backlog.ts",
     "verify": "bun scripts/verify.ts",
+    "skills:link": "bun scripts/skill-junction/cli.ts",
     "test": "bun test"
   },
   "devDependencies": {
