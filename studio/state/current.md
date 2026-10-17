@@ -6,15 +6,18 @@ Milestone: establish a recoverable studio workspace, then review the creative br
 Foundation, proposal workflows, chapter contracts, book navigation and three
 bootstrap research/review tasks are prepared. Creative concepts remain exploratory.
 
-Current focus: setup verification and resolving the GitHub repository owner.
+Current focus: publishing the verified studio foundation, then reviewing the creative brief.
 Local branch: `setup/studio-foundation`. Setup changes are committed locally.
-Remote creation/publication is pending the operator's owner choice. The intended
-local folder was explicitly supplied; no remote owner is guessed from it.
+Repository: `michi-guns/bad-dream`, private, explicitly selected by the operator.
+The remote has been created and linked as `origin`; initial branch publication
+is being completed. No PR or merge has occurred.
 
 Remaining setup checks: Obsidian GUI navigation/backlinks; fresh-session Codex
-instruction discovery and skill invocation; actual ChatGPT instruction-field
+instruction loading and skill invocation behaviour; actual ChatGPT instruction-field
 limit. Exact results are in [setup verification](../reports/setup-verification.md).
-The ChatGPT bootstrap is not ready to paste while coordinates remain unresolved.
+The ChatGPT bootstrap coordinates are filled for this repository and branch.
+Skill metadata discovery passed in a fresh app-server process; a separate model
+session has not been started to test invocation behaviour.
 
 Next project action: review `TASK-1` through the pinned CLI and clarify intended
 player emotions/core decisions before choosing a bounded first research question.

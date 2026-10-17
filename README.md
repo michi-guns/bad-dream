@@ -25,7 +25,7 @@ material. A fresh session discovers the project skill. Follow the
 [proposal workflow](studio/workflows/refine-proposal.md) to publish, accept,
 and integrate. Resume using [current state](studio/state/current.md), without
 needing the original chat. Copy [these instructions](studio/chatgpt-project-instructions.md)
-into ChatGPT only after the repository coordinates have been filled.
+into ChatGPT project instructions. Repository and branch coordinates are filled.
 
 The [verification report](studio/reports/setup-verification.md) distinguishes
 verified results from pending checks. The [tool policy](studio/tools/backlog-md.md)

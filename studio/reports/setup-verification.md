@@ -14,8 +14,9 @@ No unrelated settings, branches, worktrees or tracked files existed at the targe
 Inspected ancestor and Codex-home agent guidance locations were absent.
 
 The setup brief and explicit current instruction authorise foundation work.
-Repository identity remains pending owner selection. A path names the local
-checkout, not its remote owner. No throwaway issue was published to test writes.
+The operator explicitly selected private `michi-guns/bad-dream` in the owner-choice
+reply. The remote was created and linked as origin. No throwaway issue was
+published to test writes.
 Git identity is repository-local `jimzord12` with GitHub's account-ID noreply address.
 Private machine paths and credentials are excluded from these records.
 
@@ -63,8 +64,9 @@ Private machine paths and credentials are excluded from these records.
 
 ## Pending / not run
 
-- GitHub owner choice, remote creation, default branch/visibility/issues/permission
-  metadata, push and remote readback. Authentication alone does not prove writes.
+- Initial branch/tag push and remote readback are being completed. Repository
+  creation succeeded; metadata confirms private visibility, issues enabled and
+  reported admin/push/pull permissions. Authentication alone did not prove writes.
 - Obsidian GUI acceptance: open root vault, render book index and chapter links,
   inspect shared-note backlinks and task-to-note reference. File validation does
   not establish GUI rendering. Native UI automation is unavailable in this session.
@@ -73,8 +75,8 @@ Private machine paths and credentials are excluded from these records.
 - Bundled Python skill validator cannot run without a Python runtime. YAML/name/
   description checks can be performed with the existing Bun parser; disclose the
   alternative rather than claim the Python tool ran.
-- ChatGPT bootstrap coordinates and actual UI field limit. Conservative length
-  target passed; actual field limit remains a GUI check.
+- Actual ChatGPT instruction UI field limit. Coordinates are now filled and the
+  file is 7,919 characters; actual field limit remains a GUI check.
 - Resident-mode memory test, concurrent-write stress, closed-stderr-pipe stress,
   MCP integration and unsupported-metadata round trips: not run. These modes and
   metadata are not enabled. Short-lived functional tests do not prove long-term
@@ -84,8 +86,8 @@ Private machine paths and credentials are excluded from these records.
 
 All manifest JSON, used YAML, unique book-note IDs, required paths, current
 protocol references and exact-case internal file links passed. `bun run verify`
-currently exits 1 solely because the required GitHub owner/repository placeholder
-remains unresolved. It is intentionally not suppressed. Checker fixture test
+now exits 0 after filling the operator-selected repository coordinate. The earlier
+failure solely for unresolved coordinates was resolved, not suppressed. Checker fixture test
 passes (1 test, 5 assertions); frozen install reports no dependency changes.
 
 Rerunning init with the first-install `--backlog-dir` flag is refused safely;
@@ -103,13 +105,11 @@ TASK-1 as the next creative-brief review. Startup identifies the local branch an
 remote limitation; proposal refinement drafts before publication; acceptance
 evidence is checked before integration. Old chat cannot silently approve a mechanic.
 
-Local preparation is reviewable on `setup/studio-foundation`. No remote exists
-yet, and nothing has been pushed or merged. Repository creation needs the owner
-choice, not renewed approval for the already-authorised setup. After that choice,
-check/create the exact private remote, verify metadata, fill the bootstrap,
-rerun verification and publish the authorised initial contents. The annotated
+Local preparation is reviewable on `setup/studio-foundation`. The selected private
+remote is `https://github.com/michi-guns/bad-dream`; initial branch/tag publication
+and remote readback are being completed. No PR or merge has occurred. The annotated
 baseline tag and actual commit IDs are recorded through Git and protocol history.
 
 Initial foundation commit is `68e4708`; annotated tag `studio-v1.0.0` was created
-and verified locally. GitHub publication remains pending. Follow-up verification
+and verified locally. Follow-up verification
 records may be committed after the tagged baseline without moving that tag.

@@ -4,7 +4,7 @@ Collaborate with me on Bad Dream, a working-title horror PC game and solo-led, A
 
 ## Repository and startup
 
-Repository: REPLACE_WITH_OWNER/REPOSITORY
+Repository: michi-guns/bad-dream
 Working branch: setup/studio-foundation
 Entry point: studio/README.md
 Operating manifest: studio/manifest.json
