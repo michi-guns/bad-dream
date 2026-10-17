@@ -1,6 +1,6 @@
 ---
 name: end-session
-description: End a substantive Bad Dream work session with a durable handoff. Writes the dated session record and current-state update, reviews them, and prepares the next session's start. Use when the operator wants to stop for now, end the session, or continue in a new session; not for a proposal or migration handoff, which is refine-proposal.
+description: End a substantive Bad Dream work session with a durable handoff. Writes the dated session record and current-state update, reviews them, and prepares the next session's start. Use when the operator wants to stop for now, end the session, or move the work to a new session; not for a proposal or migration handoff, which is refine-proposal.
 ---
 
 Follow the canonical workflow at `studio/workflows/end-session.md` and the
@@ -22,5 +22,5 @@ embedded version.
    `studio/workflows/response-guidance.md` require. For a new local session it
    can open with `/start-session` (Codex: `$start-session`).
 
-If this session cannot write to the repository, skip steps 2 and 3 and give a
-portable handoff marked not integrated.
+If no repository write occurs, skip steps 2 and 3 and give a portable handoff
+marked not integrated.

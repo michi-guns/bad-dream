@@ -14,9 +14,9 @@ maintain a second embedded version. Read `AGENTS.md` first and do what it asks.
    in `studio/sessions/`, the open PRs, and the issues current state names.
    Reconcile any contradiction with `studio/workflows/reconcile-context.md`.
 3. Orient the operator as the workflow's *Orient the human* section says, in the
-   plain language of `studio/communication.md`, ending with the next decision
+   plain language of `studio/communication.md`, including the next decision
    and who makes it.
 
-Stay read-only until the operator chooses what to work on. If they named a task
-when invoking this skill, load it through the pinned Backlog CLI and
+Do no substantive work until the operator chooses what to work on. If they named
+a task when invoking this skill, load it through the pinned Backlog CLI and
 `studio/workflows/task-lifecycle.md`; for a topic, search the book and issues.
