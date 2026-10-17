@@ -34,22 +34,28 @@ Flow](../workflows/github-flow.md), #10 and [the in-one-go
 record](../sessions/2026-10-17-in-one-go.md). See [the reviewers
 record](../sessions/2026-10-17-reviewers.md).
 
-The operator's single local checkout returns to main once the wrap-up PR merges;
-the old worktrees and local archive branches were removed. Follow the [local
-migration guidance](../workflows/github-flow.md) deliberately; never silently
-reset or overwrite local work.
+The operator's single local checkout is on main after each merged PR (the
+wrap-up merged through [PR
+#12](https://github.com/michi-guns/bad-dream/pull/12)); the old worktrees and
+local archive branches were removed. Follow the [local migration
+guidance](../workflows/github-flow.md) deliberately; never silently reset or
+overwrite local work.
 
 Current focus: TASK-1, to start in a new session. It is To Do and unstarted; the
-operator assigns its owner and chooses the first question. Run `bun run backlog
--- task view TASK-1 --plain`. No creative mechanic, engine or production scope
-is accepted.
+operator assigns its owner and chooses the first question. In a new local
+session, run `/start-session` (Codex: `$start-session`), added by [PR
+#13](https://github.com/michi-guns/bad-dream/pull/13); if it is unknown, follow
+`studio/workflows/start-session.md`. Then `bun run backlog -- task view TASK-1
+--plain`. No creative mechanic, engine or production scope is accepted.
 
 The operator reported pasting the ChatGPT instructions from main after PR #11
 ([current file](../chatgpt-project-instructions.md)) into project settings; this
 is reported, not verified. Earlier setup checks remain in [setup
 verification](../reports/setup-verification.md).
 
-Resume from [the tooling wrap-up](../sessions/2026-10-17-tooling-wrap-up.md),
-[the guide](../README.md), [GitHub Flow](../workflows/github-flow.md), [response
+Resume from [the session-skills
+record](../sessions/2026-10-17-session-skills.md), [the tooling
+wrap-up](../sessions/2026-10-17-tooling-wrap-up.md), [the guide](../README.md),
+[GitHub Flow](../workflows/github-flow.md), [response
 guidance](../workflows/response-guidance.md) and [the operating
 handoff](../sessions/2026-10-17-operating-proposals.md).

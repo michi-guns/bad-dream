@@ -1,5 +1,14 @@
 # Operating protocol history
 
+## 2026-10-17 session skills
+
+Direct operator request adds two thin shared skills under `.agents/skills/`:
+`start-session` and `end-session`. They point at the canonical start-session and
+end-session workflows and embed no second version. No protocol text or version
+changes. Verified by `bun run verify`, `bun test` and the review loop reported
+in the PR. Rollback through a PR. See [the session
+record](sessions/2026-10-17-session-skills.md).
+
 ## 4.2.0 — 2026-10-17 "in one go" shorthand
 
 Proposal #10 revision 1, accepted through the operator's explicit instruction
