@@ -18,10 +18,10 @@ passed. The response guidance is now in main.
 
 The plain-language communication guide from [PR
 #6](https://github.com/michi-guns/bad-dream/pull/6) is in main at `d5e2f79`.
-Issues [#2](https://github.com/michi-guns/bad-dream/issues/2) and
-[#3](https://github.com/michi-guns/bad-dream/issues/3) remain open. Automatic
-PR-template population and the final integration records remain pending; passing
-CI alone does not close those items.
+Proposals [#2](https://github.com/michi-guns/bad-dream/issues/2) and
+[#3](https://github.com/michi-guns/bad-dream/issues/3) are closed with their
+integration records, at the operator's request on 2026-10-17. See [the
+closure record](../sessions/2026-10-17-close-proposals-2-3.md).
 
 Proposal [#7](https://github.com/michi-guns/bad-dream/issues/7) revision 1
 (fresh-context reviewers and a closed review loop) is in main through [PR
