@@ -1,10 +1,10 @@
 {
   "chapter_index": "studio/chapters/index.md",
-  "operating_version": "1.0.0",
+  "operating_version": "2.0.0",
   "protocols": {
     "foundation": {
       "path": "studio/foundation.md",
-      "version": "1.0.0"
+      "version": "2.0.0"
     },
     "knowledge-note": {
       "path": "studio/knowledge-note.md",
@@ -12,7 +12,7 @@
     },
     "start-session": {
       "path": "studio/workflows/start-session.md",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     "refine-proposal": {
       "path": "studio/workflows/refine-proposal.md",
@@ -24,11 +24,11 @@
     },
     "integrate-proposal": {
       "path": "studio/workflows/integrate-proposal.md",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     "task-lifecycle": {
       "path": "studio/workflows/task-lifecycle.md",
-      "version": "1.0.0"
+      "version": "2.0.0"
     },
     "end-session": {
       "path": "studio/workflows/end-session.md",
@@ -36,11 +36,11 @@
     },
     "change-protocol": {
       "path": "studio/workflows/change-protocol.md",
-      "version": "1.0.0"
+      "version": "2.0.0"
     },
     "reconcile-context": {
       "path": "studio/workflows/reconcile-context.md",
-      "version": "1.0.0"
+      "version": "2.0.0"
     },
     "chapter-horror-studies": {
       "path": "studio/chapters/horror-studies.md",

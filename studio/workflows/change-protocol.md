@@ -1,11 +1,30 @@
 # Change an operating protocol
 
-Protocol: `change-protocol` 1.0.0.
+Protocol: `change-protocol` 2.0.0.
 
 Explain the reason, affected records, compatibility plan, verification and rollback
 path. Use [reconciliation](reconcile-context.md) when existing decisions conflict.
-Explicit operator direction can authorise the change and routine recording;
-material unapproved operating changes follow proposal triage.
+Use a GitHub proposal for substantive operating changes:
+proposal issue → human acceptance → durable decision/rationale → versioned
+file updates → verification → integration record and closure.
+Search for duplicates first. Explicit informed operator direction can supply
+acceptance; record it truthfully in the issue using [triage](triage-proposal.md)
+without asking for the same approval again. An unapproved recommendation remains
+a proposal. Editorial corrections within accepted scope need no new proposal.
+
+If a request appears to misremember the established flow, first explain and cite
+the current rule using [reconciliation](reconcile-context.md). If the informed
+operator insists, distinguish:
+
+- **Permanent amendment:** use the proposal path, update affected rules and versions,
+  and record compatibility/migration and superseded rationale.
+- **Bounded exception:** record the exact rule bypassed, affected task/session,
+  reason, operator authority, duration or expiry, implications and follow-up in
+  the task/session or existing issue. Link the unchanged rule; this is not a
+  global amendment. Create a separate proposal if a permanent change follows.
+
+Ask only if the intended scope is unclear. Neither an exception nor an amendment
+overrides platform permissions. Do not reinterpret an exception as blanket approval.
 
 Use semantic versions: patch clarifies, minor adds compatible behaviour, major
 changes requirements needing migration or reinterpretation. Update the manifest

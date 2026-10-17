@@ -1,6 +1,6 @@
 # Start a session
 
-Protocol: `start-session` 1.0.0.
+Protocol: `start-session` 1.1.0.
 
 Inspect Git status, current branch and remotes before editing. Read the root
 agent entry, foundation, manifest and current state, then relevant workflows,
@@ -25,3 +25,26 @@ Cache instruction bytes only under repository identity, path and exact
 commit/blob/content hash; check the branch revision before reuse. Read issue,
 task and focus data separately for current freshness. Git's object store is
 enough; no cache service is needed. A new session cannot assume old cache bytes exist.
+
+## Orient the human before substantive work
+
+Assume the operator has little or no recall of repository contents and workflows.
+The agent loads context; the human should not need to study files before taking part.
+
+Give a brief, structured orientation covering:
+
+- **What:** the task or topic and its intended outcome.
+- **Why now:** its purpose and connection to the current focus.
+- **Current understanding:** established decisions, exploratory ideas and open questions.
+- **How:** work type, working surface(s), steps and human/agent roles.
+- **Result:** expected output, recording route, decision gate and completion evidence.
+
+Use [task lifecycle](task-lifecycle.md) to reconstruct or read the execution brief.
+Link sources for detail without requiring the human to open them. Scale the
+orientation to the work; a small task may need only a few bullets. Refresh it
+after a long break or material change, not before every exchange.
+
+For guided brainstorming, discuss one question at a time and explain its purpose
+when useful. Supply context and examples without silently deciding for the operator.
+If the current surface lacks a required capability, explain the handoff and provide
+the next agent with the task, relevant revision, working method and pending outputs.

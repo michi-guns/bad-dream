@@ -1,6 +1,6 @@
 # Integrate an accepted proposal
 
-Protocol: `integrate-proposal` 1.0.0.
+Protocol: `integrate-proposal` 1.1.0.
 
 Read the actual accepted proposal revision and acceptance provenance. Re-read
 current Git status, notes, chapter contracts and tasks. Use
@@ -14,7 +14,8 @@ to each chapter's shape. Update existing knowledge rather than duplicating it.
 Accepted but deferred ideas do not become active implementation work.
 
 Create or update tool-managed tasks only where action is justified and bounded.
-Follow [task lifecycle](task-lifecycle.md). An investigation needs a clear question
+Follow [task lifecycle](task-lifecycle.md), including an execution brief that states
+how and on which surface each task is worked. An investigation needs a clear question
 and useful completion criteria; incomplete design is allowed. Some integrations
 produce no tasks. Record unresolved dispositions and conflicts explicitly.
 

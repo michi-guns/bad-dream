@@ -1,5 +1,30 @@
 # Operating protocol history
 
+## 2.0.0 — 2026-10-17 guided work and informed workflow changes
+
+Authority: [proposal #1](https://github.com/michi-guns/bad-dream/issues/1),
+revision 1; [operator acceptance recorded by agent](https://github.com/michi-guns/bad-dream/issues/1#issuecomment-6231506770).
+See the [accepted rationale](../book/notes/guided-task-execution.md).
+
+- Foundation, task lifecycle, context reconciliation and protocol changes are 2.0.0: execution briefs
+  are now required and an apparent workflow memory error is corrected before
+  inferring an override. Substantive operating changes use issues; amendments and
+  bounded exceptions have distinct recording paths. These change requirements.
+- Startup and proposal integration are 1.1.0: explicit orientation and brief-aware
+  integration.
+- Agent entry, ChatGPT bootstrap and a lightweight task brief template expose the
+  behaviour. Prefer concise structured text and do not assume repository knowledge.
+- Migration: legacy tasks remain valid; reconstruct missing methods before execution,
+  persist through the pinned CLI before the next substantive task write, and avoid
+  bulk rewrites/custom fields. Current TASK-1/2/3 status and contents are unchanged.
+- Historical 1.0.0 protocols remain in Git and the existing immutable baseline tag.
+  No new tag has been created. Resolve this revision through its enclosing commit.
+- Verification and remaining limitations are in the
+  [session record](sessions/2026-10-17-guided-task-execution.md).
+- Rollback: use a reviewed corrective/revert commit to restore affected protocols,
+  manifest and bootstrap together, preserve this acceptance/history and any newer
+  task briefs, and record the reason. Do not move the baseline tag.
+
 ## 2026-10-17 — Shared skills for Claude Code
 
 Direct operator request adds `CLAUDE.md` importing `AGENTS.md`, and a Windows

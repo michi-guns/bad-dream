@@ -1,6 +1,6 @@
 # Foundation
 
-Protocol: `foundation` 1.0.0. Initial authority: the operator's 2026-10-17
+Protocol: `foundation` 2.0.0. Initial authority: the operator's 2026-10-17
 setup request and supplied revision-2 setup brief. This authority establishes
 the operating foundation without inventing a proposal or human acceptance event.
 
@@ -13,6 +13,14 @@ rationale rather than complete conversations. Significant decisions retain
 context, evidence and assumptions, alternatives, tradeoffs and reconsideration
 triggers. Missing evidence remains an open question.
 
+Agents reconstruct context from the repository; humans contribute ideas, judgment,
+decisions and practical participation without memorising its contents. Before
+substantive work, orient the operator using [session startup](workflows/start-session.md).
+Tasks must explain how they are worked, using the
+[execution brief](workflows/task-lifecycle.md). Prefer concise structured text:
+bullets, bold and tables where useful; emojis are optional and should clarify.
+Formatting must preserve reasoning, uncertainty and decision status.
+
 The authorities are defined in [the studio guide](README.md). A link means
 relevance unless its context names a stronger relation. Only explicit task
 dependencies block execution; they must be acyclic. A completed task cannot
@@ -22,7 +30,7 @@ prove proposal acceptance. Acceptance cannot prove implementation completion.
 
 Within platform and permission constraints:
 
-1. Current explicit operator direction governs current authorised work.
+1. Current informed explicit operator direction governs current authorised work.
    Instructions and acceptance differ from speculation or exploring an option.
    An explicit change permits its routine recording without asking again.
 2. Current accepted decisions govern their recorded scope. Verify the actual
@@ -32,6 +40,14 @@ Within platform and permission constraints:
    Chapter contracts add methods and shapes but cannot silently override foundation.
 4. Old chats, generated summaries and memories are leads to verify. Neither
    recency nor enthusiasm establishes acceptance or correctness.
+
+A request that appears to misremember an established workflow is not automatically
+a policy override. First cite the current rule and explain the discrepancy.
+If the operator insists after that correction, follow an explicit permanent
+amendment or bounded exception, recording scope, reason and authority. Clarify
+only when that distinction remains unclear. A bounded exception does not amend
+the global workflow. Clear informed change instructions need no repeated approval.
+See [protocol changes](workflows/change-protocol.md).
 
 Use [reconcile-context](workflows/reconcile-context.md) to identify scope,
 resolve clear authority, and ask only about a real remaining ambiguity.

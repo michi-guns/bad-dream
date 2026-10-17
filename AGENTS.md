@@ -20,3 +20,14 @@ Brainstorming is exploratory. Refinement prepares a draft; publication needs an
 explicit request. Human acceptance authorises routine integration within scope,
 not execution of every task. Keep proposal acceptance, knowledge, and task status
 in their respective authorities. End substantive sessions with a durable handoff.
+
+Before substantive work, orient the human: what, why now, established/open context,
+working method/surface, roles and durable result. Use concise bullets, bold and
+tables where useful. Read or reconstruct the task execution brief under
+[task lifecycle](studio/workflows/task-lifecycle.md); use supported task text,
+not custom frontmatter. Humans need not memorise the repository.
+
+If a request appears to misremember a workflow, cite and explain the established
+rule first. After an informed insistence, record a permanent amendment or bounded
+exception under [protocol changes](studio/workflows/change-protocol.md). Do not
+repeat approval requests for clear informed instructions.

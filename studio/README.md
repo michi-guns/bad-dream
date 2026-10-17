@@ -19,6 +19,11 @@ resulting game work may still be unfinished.
 | `studio/` | Operating protocols, templates, tooling and change history |
 | Chat | Exploration and handoffs, with no implicit durable storage |
 
+Agents reconstruct project state and orient returning humans. Tasks carry a
+[working method](workflows/task-lifecycle.md), not just completion criteria.
+Use concise structured text. Explain a misremembered workflow before treating it
+as an override; distinguish permanent amendments from bounded exceptions.
+
 Use [startup](workflows/start-session.md) for a consistent snapshot and
 [reconciliation](workflows/reconcile-context.md) for contradictions. See
 [chapter contracts](chapters/index.md), [note conventions](knowledge-note.md),
