@@ -13,10 +13,10 @@ The remote is linked as `origin`; the setup branch and `studio-v1.0.0` baseline
 tag are published. GitHub's default branch is `setup/studio-foundation`.
 No PR or merge has occurred; this is the new repository's initial content.
 
-Local update: Claude Code now shares `AGENTS.md` through `CLAUDE.md` and skills
+Published update: Claude Code now shares `AGENTS.md` through `CLAUDE.md` and skills
 through `.claude/skills` → `.agents/skills`. The junction manager, instructions
-and functional/E2E tests are committed locally; this follow-up has not been
-pushed. All 12 tests and file validation pass. Claude runtime invocation remains
+and functional/E2E tests are published in commit `05c40cb`, following the
+operator's explicit push request. All 12 tests and file validation pass. Claude runtime invocation remains
 pending. See [the shared-skills handoff](../sessions/2026-10-17-shared-skills.md).
 
 Remaining setup checks: Obsidian GUI navigation/backlinks; fresh-session Codex

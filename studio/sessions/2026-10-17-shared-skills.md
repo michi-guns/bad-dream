@@ -26,6 +26,10 @@ Changes are committed locally on `setup/studio-foundation`; publication of this
 change was not requested, so no push or PR was made. Initial repository setup
 remains published. The existing baseline tag is unchanged.
 
+Subsequent operator instruction: “push as well”. Pushed implementation commit
+`05c40cb` to `origin/setup/studio-foundation` and verified its full SHA matches
+GitHub. Updated current state to record publication; no PR or merge was performed.
+
 Next tooling check: start Claude Code in this checkout and inspect `/context`
 and `/refine-proposal`. Next project action remains TASK-1, reviewing the creative
 brief. See [the manager guide](../../scripts/skill-junction/README.md) for daily
