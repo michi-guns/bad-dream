@@ -58,5 +58,15 @@ PR #4 merged at `1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3`.
 The [main-push CI run](https://github.com/michi-guns/bad-dream/actions/runs/39025055645)
 completed successfully. Automatic template population with a newly prepared PR
 remains pending. Keep issue #2 open until its remaining checks and final
-integration record are complete. The administrator protection readbacks above
+integration record are complete (superseded by the closure below). The administrator protection readbacks above
 remain their recorded evidence; this follow-up does not claim a new admin read.
+
+## Closure on 2026-10-17
+
+The operator asked for #2 to be closed. Protection was read back again through
+`gh api` as the operator's administrator account: the
+`Required checks` status check is required, and force pushes and deletions are
+off. Template population was verified on the signed-in new-PR page for branch
+`docs/close-proposals-2-3`: the description box held the template unchanged
+(738 characters). #2 is closed with its integration record; see [the closure
+record](../sessions/2026-10-17-close-proposals-2-3.md).
