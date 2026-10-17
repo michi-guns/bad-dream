@@ -2,48 +2,44 @@
 
 Last reviewed: 2026-10-17.
 
-Milestone: establish a recoverable studio workspace, then review the creative brief.
-Foundation, proposal workflows, chapter contracts, book navigation and three
-bootstrap research/review tasks are prepared. Creative concepts remain exploratory.
+GitHub Flow from accepted proposal #2 revision 1 was added to main through
+[PR #4](https://github.com/michi-guns/bad-dream/pull/4), merge commit
+`1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3`. Its
+[post-merge checks](https://github.com/michi-guns/bad-dream/actions/runs/39025055645)
+passed. The repository is public, main is the default, and protection was
+configured and verified through administrator readback. See
+[settings evidence](../reports/github-flow-settings.md).
 
-Current focus: operating update #1 is integrated; next, orient the human for
-TASK-1 and choose the first bounded question. Before TASK-1 execution, reconstruct
-its working method using the current task lifecycle and persist through the pinned
-CLI before the next substantive task write. TASK-1 has not been started here.
-Local branch: `setup/studio-foundation`. Setup changes are committed locally.
-Repository: `michi-guns/bad-dream`, private, explicitly selected by the operator.
-The remote is linked as `origin`; the setup branch and `studio-v1.0.0` baseline
-tag are published. GitHub's default branch is `setup/studio-foundation`.
-No PR or merge has occurred; this is the new repository's initial content.
+Accepted proposal #3 revision 4 was added to main through
+[PR #5](https://github.com/michi-guns/bad-dream/pull/5), squash commit
+`2112dcc8dc838de0aeec783363e1696e97af0f0e`. Its
+[post-merge checks](https://github.com/michi-guns/bad-dream/actions/runs/39025700980)
+passed. The response guidance is now in main.
 
-Published update: Claude Code now shares `AGENTS.md` through `CLAUDE.md` and skills
-through `.claude/skills` → `.agents/skills`. The junction manager, instructions
-and functional/E2E tests are published in commit `05c40cb`, following the
-operator's explicit push request. All 12 tests and file validation pass. Claude runtime invocation remains
-pending. See [the shared-skills handoff](../sessions/2026-10-17-shared-skills.md).
+Current focus: review [PR #6](https://github.com/michi-guns/bad-dream/pull/6),
+which prepares the requested plain-language communication guide. Its branch has
+been updated after #5; both the existing agent rules and communication links
+are retained. It still needs successful fresh checks/review and separate human
+merge authorisation. This guide has not been added to main yet.
+Issues #2 and #3 remain open. Automatic PR-template population and the final
+integration records remain pending; passing CI alone does not close those items.
 
-Published operating update: proposal [#1](https://github.com/michi-guns/bad-dream/issues/1)
-records explicit operator approval for guided task execution, structured text and
-correction of misremembered workflows before informed amendments/exceptions.
-Operating version is 2.0.0. See the
-[session handoff](../sessions/2026-10-17-guided-task-execution.md) and
-[accepted rationale](../../book/notes/guided-task-execution.md).
-Task contents/status remain unchanged; new protocol behaviour needs its first
-real task session. The updated ChatGPT bootstrap must be pasted into project
-settings by the operator; changing this file does not change app settings.
+The original local checkout was preserved on setup/studio-foundation at 0d5cb38.
+Implementation used separate worktrees. Follow the
+[local migration guidance](../workflows/github-flow.md) deliberately; never
+silently reset or overwrite local work. The communication conflict fix was prepared separately
+and did not access or change the operator's checkout.
 
-Remaining setup checks: Obsidian GUI navigation/backlinks; fresh-session Codex
-instruction loading and skill invocation behaviour; actual ChatGPT instruction-field
-limit. Exact results are in [setup verification](../reports/setup-verification.md).
-The ChatGPT bootstrap coordinates are filled for this repository and branch.
-Skill metadata discovery passed in a fresh app-server process; a separate model
-session has not been started to test invocation behaviour.
+TASK-1 remains To Do and unstarted. No Backlog.md files were modified. Reconstruct
+its execution brief through the pinned CLI before eventual execution. No creative
+mechanic, engine or production scope is accepted.
 
-Next project action: review `TASK-1` through the pinned CLI and clarify intended
-player emotions/core decisions before choosing a bounded first research question.
-`TASK-2` tests the study template in one real session; `TASK-3` proposes a small
-first research set. All are To Do, owner needed, and explicitly sourced to the
-bootstrap brief. No game, engine, AI mechanic or study list has been accepted.
+After the communication guide is merged and checked, the human should paste
+[the current ChatGPT instructions](../chatgpt-project-instructions.md) into project
+settings. Repository edits do not change app settings. Earlier setup checks remain
+in [setup verification](../reports/setup-verification.md).
 
-Resume with [studio guide](../README.md), [orientation](../../book/notes/project-orientation.md)
-and [session handoff](../sessions/2026-10-17-bootstrap.md).
+Resume from [the guide](../README.md),
+[GitHub Flow](../workflows/github-flow.md),
+[response guidance](../workflows/response-guidance.md) and
+[the operating handoff](../sessions/2026-10-17-operating-proposals.md).

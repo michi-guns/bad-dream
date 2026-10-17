@@ -38,5 +38,14 @@ Tool setup is documented for [Obsidian](tools/obsidian.md) and
 Codex and Claude Code share canonical skills through the
 [Windows skill junction manager](../scripts/skill-junction/README.md).
 
+Repository content follows [GitHub Flow](workflows/github-flow.md): working
+branches and PRs into main, independent advisory agent review, and separate
+human merge authorisation for a named PR/head SHA. See
+[settings evidence](reports/github-flow-settings.md) for verified protection.
+
+Use [response guidance](workflows/response-guidance.md) for useful stable stage
+labels, truthful progress, brief recaps/recommendations in every response and
+explicit Chat ↔ Local Agent prompts. Acceptance is distinct from integration.
+
 Read [how to communicate with the human](communication.md): use plain language,
 restore context before asking for decisions, and keep technical detail readable.

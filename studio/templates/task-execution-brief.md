@@ -23,3 +23,14 @@ Use concise bullets, bold or a table. Ask guided questions one at a time.
 
 The agent supplies context; the human does not need to remember the repository.
 See [task lifecycle](../workflows/task-lifecycle.md) for authority and legacy-task handling.
+
+## Visibility and handoff
+
+- **Applicable workflow and stable stage values:** link the shared procedure;
+  establish task-level stages once only when no applicable workflow exists.
+- **Current stage:** simple label at useful orientation points, not every reply.
+- **Progress evidence:** meaningful known total or open scope; actual outcomes,
+  explanation of reopened/changed counts; no implication of acceptance/integration.
+- **Every response:** brief bullet Recap and next-action Recommendation(s).
+- **Surface transition:** announce destination/reason and provide the complete
+  receiving prompt from [handoff](handoff.md), preserving existing authority.

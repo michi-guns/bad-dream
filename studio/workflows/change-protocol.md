@@ -1,6 +1,6 @@
 # Change an operating protocol
 
-Protocol: `change-protocol` 2.0.0.
+Protocol: `change-protocol` 3.0.0.
 
 Explain the reason, affected records, compatibility plan, verification and rollback
 path. Use [reconciliation](reconcile-context.md) when existing decisions conflict.
@@ -42,3 +42,9 @@ Git history/tags provide archives; do not copy an archive directory for every ed
 Verify links, manifest, affected content and workflows. Reload changed instructions
 and invalidate affected caches by exact content hash. Roll back through a reviewed
 revert or corrective commit, preserving unrelated work and historical evidence.
+
+The file-update and rollback portions of the proposal path use
+[GitHub Flow](github-flow.md): working branch → PR/checks/advisory review →
+separate human authorisation of named PR/head SHA → merge/readback → integration
+record and closure. Neither direct primary-branch content writes nor a pushed
+branch satisfy integration. Preserve historical protocol and tag provenance.

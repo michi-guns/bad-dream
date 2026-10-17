@@ -1,6 +1,6 @@
 # Foundation
 
-Protocol: `foundation` 2.0.0. Initial authority: the operator's 2026-10-17
+Protocol: `foundation` 4.0.0. Initial authority: the operator's 2026-10-17
 setup request and supplied revision-2 setup brief. This authority establishes
 the operating foundation without inventing a proposal or human acceptance event.
 
@@ -70,3 +70,15 @@ Use [knowledge-note](knowledge-note.md) vocabulary. Ordinary protocol changes
 follow [change-protocol](workflows/change-protocol.md). Machine-specific state,
 credentials, caches and dependencies are ignored. Keep the system modest and
 human-triggered; no second tracker or always-on agent infrastructure.
+
+Repository changes follow [GitHub Flow](workflows/github-flow.md). Accepted
+scope permits preparing branches/PRs; integration requires separate explicit
+human merge authorisation naming the PR and reviewed head SHA, then merge and
+readback. Agents cannot supply human acceptance or merge permission. Missing
+required protection enforcement remains an explicit blocker.
+
+[Response guidance](workflows/response-guidance.md) governs ongoing visibility:
+use stable stage labels at useful orientation points, evidence-based counts,
+brief bullet Recap and next-action Recommendation(s) in every response, and
+explicit two-way surface handoffs with complete prompts. Never imply human
+decisions or repository integration from conversational progress.

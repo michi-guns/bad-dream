@@ -1,5 +1,42 @@
 # Operating protocol history
 
+## 2026-10-17 plain-language communication guide (pending)
+
+Direct operator request adds studio/communication.md and links from the agent
+entry/studio guide. It explains the situation and next decision in everyday
+words, with technical details kept exact and placed after the practical point.
+The guide clarifies existing communication expectations; no approval or merge
+rule changes. PR #6 remains unmerged. See
+[the session record](sessions/2026-10-17-plain-language.md).
+
+## 4.0.0 — 2026-10-17 response guidance (merged; final records pending)
+
+Accepted #3 revision 4 extends #1 with response-guidance 1.0.0: stable useful stage
+labels (simple by default), truthful counts, every-response recaps/recommendations
+and complete bidirectional handoff prompts. Updates foundation, startup, task
+lifecycle, end-session, agent/bootstrap and templates. Prerequisite #2
+PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3. PR #5 then merged
+at 2112dcc8dc838de0aeec783363e1696e97af0f0e; its post-merge checks passed.
+Final issue records and the additional communication guide remain pending. Historical header rules remain in issue revisions;
+revision 4 governs. No task files/status or creative scope changes. See
+[decision](../book/notes/response-guidance.md) and
+[verification](reports/response-guidance-verification.md). Rollback through a PR.
+
+
+## 3.0.0 — 2026-10-17 GitHub Flow (merged; follow-up verification pending)
+
+Accepted #2 revision 1 and the supplemental simple acceptance-comment convention.
+Adds github-flow 1.0.0, PR template and pinned Linux/Windows canonical CI.
+Versions affected authority/integration protocols for PR-only main content and
+separate human merge authorisation. Administrative rename preserves b2bf58a and
+existing tags. Enforcement was blocked while the repository was a private Free
+organisation repository; after the operator made it public, main protection was
+configured and verified by readback. See [settings evidence](reports/github-flow-settings.md). No tasks are changed.
+PR #4 merged at 1fb2f845bc1e9746c73417cb8d7b8dc76695bfa3; post-merge
+CI passed. Automatic template population and final issue disposition remain
+pending. Rollback uses a PR; historical setup coordinates remain provenance.
+
+
 ## 2.0.0 — 2026-10-17 guided work and informed workflow changes
 
 Authority: [proposal #1](https://github.com/michi-guns/bad-dream/issues/1),
